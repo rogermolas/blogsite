@@ -1,5 +1,5 @@
 title = "Osprey Example Site"
-baseURL = "https://rogermolas.github.io/blogsite"
+baseURL = "https://rogermolas.github.io/blogsite/"
 publishDir = "docs"
 tags = ["portfolio", "web design", "blog"]
 languageCode = "en-US"
