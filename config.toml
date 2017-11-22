@@ -1,5 +1,6 @@
 title = "Osprey Example Site"
 baseURL = "https://tomanistor.com"
+publishDir = "docs"
 tags = ["portfolio", "web design", "blog"]
 languageCode = "en-US"
 config = "config.toml"
