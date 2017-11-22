@@ -1,7 +1,7 @@
-title = "Osprey Example Site"
+title = "Roger Molas"
 baseURL = "https://rogermolas.github.io/blogsite/"
 publishDir = "docs"
-tags = ["portfolio", "web design", "blog"]
+tags = ["portfolio", "ios dev", "blog"]
 languageCode = "en-US"
 config = "config.toml"
 theme = "osprey"
@@ -11,9 +11,9 @@ disqusShortname = "tomanistor"
 disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 
 [Params]
-    tagline = "Osprey Example Site"
-    author = "Toma Nistor"
-    description = "Full-stack web developer and UI/UX enthusiast based in San Diego, CA."
+    tagline = "Roger Molas"
+    author = "Roger Molas"
+    description = "iOS Engineer"
     logoBig = "/images/osprey-logo.png"
     logoSmall = "/images/osprey-logo.png"
     favicon = "favicon.ico"
