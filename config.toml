@@ -1,49 +1,46 @@
+baseurl = "http://localhost:1313/blogsite/"
+DefaultContentLanguage = "en"
 title = "Roger Molas"
-baseURL = "https://rogermolas.github.io/blogsite/"
-publishDir = "docs"
-tags = ["portfolio", "ios dev", "blog"]
-languageCode = "en-US"
-config = "config.toml"
-theme = "osprey"
-canonifyURLS = true
-googleAnalytics = ""
-disqusShortname = "tomanistor"
-disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+[params]
+    useChroma = true
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
 
 [Params]
-    tagline = "Roger Molas"
-    author = "Roger Molas"
-    description = "iOS Engineer"
-    logoBig = "/images/osprey-logo.png"
-    logoSmall = "/images/osprey-logo.png"
-    favicon = "favicon.ico"
-    opengraphImage = "/images/osprey.png"
-    twitter = "TomaNistor"
-    linkedin = "tomanistor"
-    github = "tomanistor"
-    email = ""
-    googleTagManger = ""
-    highlightJS = true
-    copyright = true
-    credit = true
-    customCSS = false
-    cacheBustCSS = false
-    cacheBustJS = false
-    ajaxFormspree = true
+  subtitle = "Welcome to my site and this is the place where i collect my thoughts, works and findings to share with the public. "
+  logo = "img/profile.jpg"
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = false
+  comments = true
+
+[Author]
+  name = "Roger Molas"
+  email = "contact@rogermolas.com"
+  github = "rogermolas"
+  twitter = "roger_molas"
+  linkedin = "rogermolas"
+  stackoverflow = "/users/592526/roger"
 
 [[menu.main]]
-    name = "About"
-    url  = "/#about"
-    weight = 1
-[[menu.main]]
-    name = "Work"
-    url  = "/#work"
-    weight = 2
-[[menu.main]]
-    name = "Blog"
-    url  = "/#blog"
+    name = "ABOUT"
+    url = "page/about/"
     weight = 3
+
 [[menu.main]]
-    name = "Contact"
-    url  = "/#contact"
-    weight = 4
+    name = "PROJECTS"
+    url = ""
+    weight = 2
+
+[[menu.main]]
+    name = "BLOG"
+    url = ""
+    weight = 1
+
+
