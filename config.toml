@@ -16,6 +16,7 @@ pygmentsUseClasses = true
 #googleAnalytics = "XXX"
 
 [Params]
+  title = "Roger Molas"
   subtitle = "Welcome to my site and this is the place where i collect my thoughts, works and findings to share with the public. "
   logo = "img/profile.jpg"
   favicon = "img/favicon.ico"
