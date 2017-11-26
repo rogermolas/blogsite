@@ -14,7 +14,6 @@ Here are some of my favorite transformations that can be done with the new NSStr
 ```
 print("roger".stringByApplyingTransform(NSStringTransformLatinToGreek, reverse: false)!)
 //ῤογερ
-
 print("roger".stringByApplyingTransform(NSStringTransformLatinToHangul, reverse: false)!)
 //로겔
 print("\uD83D\uDC2E".stringByApplyingTransform(NSStringTransformToUnicodeName, reverse: false)!)

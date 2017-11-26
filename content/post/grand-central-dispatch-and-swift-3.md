@@ -18,7 +18,6 @@ One of the most common GCD patterns is to perform work on a global background qu
 
 ### Objective-C
 
-
 ```
 dispatch_queue_t backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
 dispatch_async(backgroundQueue, ^{
@@ -31,7 +30,6 @@ dispatch_async(backgroundQueue, ^{
 
 
 ### Swift 2.x
-
 
 ```
 let qosClass = QOS_CLASS_BACKGROUND
@@ -85,12 +83,11 @@ let queue = DispatchQueue(label: "com.process.queue")
 Dispatch using the main thread (_dispatch_get_main_queue()_)
 
 ```
-
 DispatchQueue.main.async {
    print("main thread dispatch")
 }
-```
 
+```
 **DispatchWorkItem - **wrap a block of code and pass it to **DispatchQueue**
 
 ```
