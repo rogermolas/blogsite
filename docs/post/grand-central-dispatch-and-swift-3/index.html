@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Grand Central Dispatch and Swift 3</title>
+  <meta property="og:title" content="Grand Central Dispatch and Swift 3" />
+  <meta name="twitter:title" content="Grand Central Dispatch and Swift 3" />
+  <meta name="description" content="Grand Central Dispatch (GCD or libdispatch) a system level library for managing concurrent operations develop by Apple Inc., it is one of the more complicated and unfriendly APIs in iOS SDK. It was written in C programming language using this API felts like writing low-level C code that executed directly into hardware.
+GCD or libdispatch is a combination of logic in the xnu kernel alongside the user-space library. The kernel has the most information available to balance workload across the entire system.">
+  <meta property="og:description" content="Grand Central Dispatch (GCD or libdispatch) a system level library for managing concurrent operations develop by Apple Inc., it is one of the more complicated and unfriendly APIs in iOS SDK. It was written in C programming language using this API felts like writing low-level C code that executed directly into hardware.
+GCD or libdispatch is a combination of logic in the xnu kernel alongside the user-space library. The kernel has the most information available to balance workload across the entire system.">
+  <meta name="twitter:description" content="Grand Central Dispatch (GCD or libdispatch) a system level library for managing concurrent operations develop by Apple Inc., it is one of the more complicated and unfriendly APIs in iOS SDK. It was …">
+  <meta name="author" content="Roger Molas"/>
+  <link href='https://rogermolas.github.io/blogsite/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://rogermolas.github.io/blogsite/img/profile.jpg" />
+  <meta name="twitter:image" content="https://rogermolas.github.io/blogsite/img/profile.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@roger_molas" />
+  <meta name="twitter:creator" content="@roger_molas" />
+  <meta property="og:url" content="https://rogermolas.github.io/blogsite/post/grand-central-dispatch-and-swift-3/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Roger Molas" />
+
+  <meta name="generator" content="Hugo 0.30.2" />
+  <link rel="canonical" href="https://rogermolas.github.io/blogsite/post/grand-central-dispatch-and-swift-3/" />
+  <link rel="alternate" href="" type="application/rss+xml" title="Roger Molas">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://rogermolas.github.io/blogsite/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://rogermolas.github.io/blogsite/css/highlighting.css" />
+  <link rel="stylesheet" href="https://rogermolas.github.io/blogsite/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://rogermolas.github.io/blogsite/css/highlight.min.css" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://rogermolas.github.io/blogsite/">Roger Molas</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="BLOG" href="/blogsite/">BLOG</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="PROJECTS" href="/blogsite/">PROJECTS</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="ABOUT" href="/blogsite/page/about/">ABOUT</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Roger Molas" href="https://rogermolas.github.io/blogsite/">
+            <img class="avatar-img" src="https://rogermolas.github.io/blogsite/img/profile.jpg" alt="Roger Molas" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Grand Central Dispatch and Swift 3</h1>
+                
+                
+                  <span class="post-meta">
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on December 9, 2016
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 3 min (506 mots)
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<p><strong><a href="https://developer.apple.com/reference/dispatch">Grand Central Dispatch</a> </strong>(GCD or libdispatch) a system level library for managing concurrent operations develop by Apple Inc., it is one of the more complicated and unfriendly APIs in iOS SDK. It was written in C programming language using this API felts like writing low-level C code that executed directly into hardware.</p>
+
+<p>GCD or libdispatch is a combination of logic in the xnu kernel alongside the user-space library. The kernel has the most information available to balance workload across the entire system.</p>
+
+<p>GCD manages FIFO queues to which your application can submit tasks in the form of block objects (dispatch queue). Each task object can be executed either synchronously or asynchronously.</p>
+
+<p>One of the most common GCD patterns is to perform work on a global background queue and update the UI on the main queue as soon as the work is done.</p>
+
+<h3 id="objective-c">Objective-C</h3>
+
+<pre><code>dispatch_queue_t backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
+dispatch_async(backgroundQueue, ^{
+  UIImage *parsedImage = [UIImage imageWithData:data]  // backround task
+  dispatch_async(dispatch_get_main_queue(), ^{
+     [self displayImage:parsedImage];                  // update UI
+  });
+});
+</code></pre>
+
+<h3 id="swift-2-x">Swift 2.x</h3>
+
+<pre><code>let qosClass = QOS_CLASS_BACKGROUND
+let backgroundQueue = dispatch_get_global_queue(qosClass, 0)
+dispatch_async(backgroundQueue, {
+   let parsedImage = UIImage(data: data)              // backround task
+   dispatch_async(dispatch_get_main_queue(), ^{
+      self.display(image: parsedImage)               // update UI
+   });
+});
+</code></pre>
+
+<p>Both ObjectiveC and Swift(older version) first create the service class by using <strong>DISPATCH_QUEUE_PRIORITY_BACKGROUND</strong>, <strong>QOS_CLASS_BACKGROUND</strong>,  then create the background queue by using system call **dispatch_get_global_queue **which returns instance of <strong>dispatch_queue_t</strong> and pass it to <strong>dispatch_async</strong> call.</p>
+
+<p>As you can see, its not a pure Swift and Objective-C syntax because it is exposed directly from libdispach library which is written in C programming language.</p>
+
+<h3 id="new-swift-3-0-dispatch-syntax">New Swift 3.0 dispatch syntax</h3>
+
+<p>Swift 3.0 introduce a new set of data structures and models for Grand Central dispatch.</p>
+
+<p><strong>DispatchQueue</strong> Class enables creating and modifying queues, dispatching synchronously or asynchronously and etc..</p>
+
+<pre><code>DispatchQueue.global(qos: .background).async {
+   let parsedImage = UIImage(data: data)        // backround task
+   DispatchQueue.main.async {
+      self.display(image: parsedImage)          // update UI
+   }
+}
+</code></pre>
+
+<p>Quality of service is replaces the old priority attributes that were deprecated in iOS8.</p>
+
+<pre><code>* DISPATCH_QUEUE_PRIORITY_HIGH:        .userInitiated
+* DISPATCH_QUEUE_PRIORITY_DEFAULT:     .default
+* DISPATCH_QUEUE_PRIORITY_LOW:         .utility
+* DISPATCH_QUEUE_PRIORITY_BACKGROUND:  .background
+</code></pre>
+
+<p>Some of the queues that we use are already present as DispatchQueue instance</p>
+
+<p>Creating queue using default initializer</p>
+
+<pre><code>let queue = DispatchQueue(label: &quot;com.process.queue&quot;)
+</code></pre>
+
+<p>Dispatch using the main thread (_dispatch_get_main<em>queue()</em>)</p>
+
+<pre><code>
+DispatchQueue.main.async {
+   print(&quot;main thread dispatch&quot;)
+}
+</code></pre>
+
+<p><strong>DispatchWorkItem - </strong>wrap a block of code and pass it to <strong>DispatchQueue</strong></p>
+
+<pre><code>let workItem = DispatchWorkItem(qos: .userInitiated, flags: .assignCurrentContext) {
+   // Do work here
+}
+queue.async(execute: workItem)
+</code></pre>
+
+<p><strong>Dispatch After</strong></p>
+
+<pre><code>DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+  // Task invoke after 5 seconds
+}
+</code></pre>
+
+<p><strong>Dispatch assert</strong></p>
+
+<pre><code>let queue = DispatchQueue.global(qos: DispatchQoS.QoSClass.default)
+let mainQueue = DispatchQueue.main
+mainQueue.async {
+dispatchPrecondition(condition: .notOnQueue(mainQueue))
+   // This code won't execute
+}
+queue.async {
+dispatchPrecondition(condition: .onQueue(queue))
+   // This code will execute
+}
+</code></pre>
+
+<p><strong>dispatchPrecondition</strong> replace dispatch_assert and allow you to check whether or not you are on the expected thread before executing code.</p>
+
+<p>In Swift 3, <strong>dispatch_once</strong> is deprecated, it should be replace with either global, static and constants variables.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>GCD new APIs bring more flexibility and easy way to get things done,  although its still in beta and <strong><a href="https://developer.apple.com/reference/dispatch/dispatchqueue"><em>documentation</em></a></strong> is still incomplete.</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://rogermolas.github.io/blogsite/post/new-ios9-string-transformations-api/" data-toggle="tooltip" data-placement="top" title="New iOS9 String Transformations API">&larr; Previous Post</a>
+          </li>
+        
+        
+      </ul>
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:contact@rogermolas.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/rogermolas" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/roger_molas" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/rogermolas" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com//users/592526/roger" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Roger Molas
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://rogermolas.github.io/blogsite/">Roger Molas</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.30.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://rogermolas.github.io/blogsite/js/main.js"></script>
+<script src="https://rogermolas.github.io/blogsite/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="https://rogermolas.github.io/blogsite/js/load-photoswipe.js"></script>
+
+
+
+  </body>
+</html>
+

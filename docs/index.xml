@@ -7,31 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
     <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jun 2017 17:39:21 -0700</lastBuildDate>
     
 	<atom:link href="https://rogermolas.github.io/blogsite/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>https://rogermolas.github.io/blogsite/blog/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/blog/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://rogermolas.github.io/blogsite/blog/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/blog/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
     
     <item>
       <title>About</title>
@@ -41,52 +20,6 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <guid>https://rogermolas.github.io/blogsite/about/</guid>
       <description>Welcome to the Osprey Theme To create an about section, generate an about.md file in your content folder by doing:
 $ hugo new about.md Then add your own content to the markdown file. Everything in the file will be generated to show here on the home page.</description>
-    </item>
-    
-    <item>
-      <title>Toma Nistor</title>
-      <link>https://rogermolas.github.io/blogsite/gallery/toma-nistor/</link>
-      <pubDate>Mon, 15 May 2017 22:25:16 -0700</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/gallery/toma-nistor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://rogermolas.github.io/blogsite/gallery/hugo/</link>
-      <pubDate>Mon, 15 May 2017 22:25:02 -0700</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/gallery/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Osprey</title>
-      <link>https://rogermolas.github.io/blogsite/gallery/osprey/</link>
-      <pubDate>Mon, 15 May 2017 21:57:17 -0700</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/gallery/osprey/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rugged Fellows Guide</title>
-      <link>https://rogermolas.github.io/blogsite/gallery/rugged-fellows-guide/</link>
-      <pubDate>Mon, 15 May 2017 21:52:57 -0700</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/gallery/rugged-fellows-guide/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Grand Central Dispatch and Swift 3</title>
-      <link>https://rogermolas.github.io/blogsite/blog/grand-central-dispatch-and-swift-3/</link>
-      <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/blog/grand-central-dispatch-and-swift-3/</guid>
-      <description>Grand Central Dispatch (GCD or libdispatch) a system level library for managing concurrent operations develop by Apple Inc., it is one of the more complicated and unfriendly APIs in iOS SDK. It was written in C programming language using this API felts like writing low-level C code that executed directly into hardware.
-GCD or libdispatch is a combination of logic in the xnu kernel alongside the user-space library. The kernel has the most information available to balance workload across the entire system.</description>
     </item>
     
     <item>
@@ -107,8 +40,7 @@ GCD or libdispatch is a combination of logic in the xnu kernel alongside the use
       <guid>https://rogermolas.github.io/blogsite/post/new-ios9-string-transformations-api/</guid>
       <description>String transformations formerly done using CFStringTransform a part of Core Foundation Framework. In iOS 9 string transformation can be done along with the new “NSStringTransform*” constants a native Cocoa API and no need to deal with bridging to CFStringRef.
 Here are some of my favorite transformations that can be done with the new NSStringTransform* API.
-[code language=&amp;ldquo;objc&amp;rdquo;] print(&amp;ldquo;roger&amp;rdquo;.stringByApplyingTransform(NSStringTransformLatinToGreek, reverse: false)!) //ῤογερ
-print(&amp;ldquo;roger&amp;rdquo;.stringByApplyingTransform(NSStringTransformLatinToHangul, reverse: false)!) //로겔 print(&amp;rdquo;\uD83D\uDC2E&amp;rdquo;.stringByApplyingTransform(NSStringTransformToUnicodeName, reverse: false)!) //{COW FACE}</description>
+print(&amp;quot;roger&amp;quot;.stringByApplyingTransform(NSStringTransformLatinToGreek, reverse: false)!) //ῤογερ print(&amp;quot;roger&amp;quot;.stringByApplyingTransform(NSStringTransformLatinToHangul, reverse: false)!) //로겔 print(&amp;quot;\uD83D\uDC2E&amp;quot;.stringByApplyingTransform(NSStringTransformToUnicodeName, reverse: false)!) //{COW FACE}  </description>
     </item>
     
     <item>
@@ -130,30 +62,6 @@ When app is launched on Apple Watch, the WatchKit extension on iPhone runs in th
       <guid>https://rogermolas.github.io/blogsite/post/ios-dependency-management/</guid>
       <description>As an iOS developer, you certainly use a third-party libraries or a source code made by others to extend your app’s abilities. At first, it seems easy, just drag and drop some source code or libraries in your Xcode project or drag and drop an entire subproject into the parent project and you are done.
 Just imagine how difficult it would be if you had to implement everything from scratch!</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://rogermolas.github.io/blogsite/blog/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/blog/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://rogermolas.github.io/blogsite/blog/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/blog/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
     </item>
     
   </channel>

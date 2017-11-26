@@ -22,29 +22,11 @@
     </item>
     
     <item>
-      <title>Cocoa</title>
-      <link>https://rogermolas.github.io/blogsite/categories/cocoa/</link>
-      <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/cocoa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Cocoapods</title>
       <link>https://rogermolas.github.io/blogsite/categories/cocoapods/</link>
       <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
       <guid>https://rogermolas.github.io/blogsite/categories/cocoapods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Concurrency</title>
-      <link>https://rogermolas.github.io/blogsite/categories/concurrency/</link>
-      <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/concurrency/</guid>
       <description></description>
     </item>
     
@@ -58,15 +40,6 @@
     </item>
     
     <item>
-      <title>Development</title>
-      <link>https://rogermolas.github.io/blogsite/categories/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Gcd</title>
       <link>https://rogermolas.github.io/blogsite/categories/gcd/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
@@ -76,47 +49,38 @@
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>https://rogermolas.github.io/blogsite/categories/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ios</title>
-      <link>https://rogermolas.github.io/blogsite/categories/ios/</link>
-      <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/ios/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nsstring</title>
-      <link>https://rogermolas.github.io/blogsite/categories/nsstring/</link>
+      <title>Nsstringtransform</title>
+      <link>https://rogermolas.github.io/blogsite/categories/nsstringtransform/</link>
       <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/nsstring/</guid>
+      <guid>https://rogermolas.github.io/blogsite/categories/nsstringtransform/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Ruby</title>
-      <link>https://rogermolas.github.io/blogsite/categories/ruby/</link>
-      <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
+      <title>Strings</title>
+      <link>https://rogermolas.github.io/blogsite/categories/strings/</link>
+      <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/ruby/</guid>
+      <guid>https://rogermolas.github.io/blogsite/categories/strings/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Swift</title>
-      <link>https://rogermolas.github.io/blogsite/categories/swift/</link>
+      <title>Swift3</title>
+      <link>https://rogermolas.github.io/blogsite/categories/swift3/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/swift/</guid>
+      <guid>https://rogermolas.github.io/blogsite/categories/swift3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Threading</title>
+      <link>https://rogermolas.github.io/blogsite/categories/threading/</link>
+      <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
+      <author>contact@rogermolas.com (Roger Molas)</author>
+      <guid>https://rogermolas.github.io/blogsite/categories/threading/</guid>
       <description></description>
     </item>
     
