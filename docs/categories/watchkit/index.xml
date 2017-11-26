@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Watchkit on Roger Molas</title>
+    <link>https://rogermolas.github.io/blogsite/categories/watchkit/</link>
+    <description>Recent content in Watchkit on Roger Molas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
+    <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
+    <lastBuildDate>Wed, 13 May 2015 10:14:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://rogermolas.github.io/blogsite/categories/watchkit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WatchKit Framework</title>
+      <link>https://rogermolas.github.io/blogsite/post/watchkit-framework/</link>
+      <pubDate>Wed, 13 May 2015 10:14:00 +0000</pubDate>
+      <author>contact@rogermolas.com (Roger Molas)</author>
+      <guid>https://rogermolas.github.io/blogsite/post/watchkit-framework/</guid>
+      <description>WatchKit is the new framework created by Apple for Apple Watch development, WatchKit is available starting Xcode 6.2 and iOS 8.2.
+Analogous to UIKit for iOS apps, the framework allows developers to drop in custom interfaces and interact with your existing iOS app.
+When app is launched on Apple Watch, the WatchKit extension on iPhone runs in the background to update the user interface and respond to user interactions.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Galleries on Osprey Example Site</title>
+    <title>Galleries on Roger Molas</title>
     <link>https://rogermolas.github.io/blogsite/gallery/</link>
-    <description>Recent content in Galleries on Osprey Example Site</description>
+    <description>Recent content in Galleries on Roger Molas</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <copyright>true</copyright>
+    <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
+    <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
     <lastBuildDate>Mon, 15 May 2017 22:25:16 -0700</lastBuildDate>
     
 	<atom:link href="https://rogermolas.github.io/blogsite/gallery/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +16,7 @@
       <title>Toma Nistor</title>
       <link>https://rogermolas.github.io/blogsite/gallery/toma-nistor/</link>
       <pubDate>Mon, 15 May 2017 22:25:16 -0700</pubDate>
-      
+      <author>contact@rogermolas.com (Roger Molas)</author>
       <guid>https://rogermolas.github.io/blogsite/gallery/toma-nistor/</guid>
       <description></description>
     </item>
@@ -25,7 +25,7 @@
       <title>Hugo</title>
       <link>https://rogermolas.github.io/blogsite/gallery/hugo/</link>
       <pubDate>Mon, 15 May 2017 22:25:02 -0700</pubDate>
-      
+      <author>contact@rogermolas.com (Roger Molas)</author>
       <guid>https://rogermolas.github.io/blogsite/gallery/hugo/</guid>
       <description></description>
     </item>
@@ -34,7 +34,7 @@
       <title>Osprey</title>
       <link>https://rogermolas.github.io/blogsite/gallery/osprey/</link>
       <pubDate>Mon, 15 May 2017 21:57:17 -0700</pubDate>
-      
+      <author>contact@rogermolas.com (Roger Molas)</author>
       <guid>https://rogermolas.github.io/blogsite/gallery/osprey/</guid>
       <description></description>
     </item>
@@ -43,7 +43,7 @@
       <title>Rugged Fellows Guide</title>
       <link>https://rogermolas.github.io/blogsite/gallery/rugged-fellows-guide/</link>
       <pubDate>Mon, 15 May 2017 21:52:57 -0700</pubDate>
-      
+      <author>contact@rogermolas.com (Roger Molas)</author>
       <guid>https://rogermolas.github.io/blogsite/gallery/rugged-fellows-guide/</guid>
       <description></description>
     </item>

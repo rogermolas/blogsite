@@ -1,5 +1,6 @@
-baseurl = "http://localhost:1313/blogsite/"
+baseurl = "https://rogermolas.github.io/blogsite/"
 DefaultContentLanguage = "en"
+publishDir = "docs"
 title = "Roger Molas"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"

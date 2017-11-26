@@ -1,103 +1,187 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-        <title>
-            
-            
-                Migrate to Hugo from Jekyll | Osprey Example Site
-            
-        </title>
+  <title>Migrate to Hugo from Jekyll</title>
+  <meta property="og:title" content="Migrate to Hugo from Jekyll" />
+  <meta name="twitter:title" content="Migrate to Hugo from Jekyll" />
+  <meta name="description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.">
+  <meta property="og:description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.">
+  <meta name="twitter:description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move …">
+  <meta name="author" content="Roger Molas"/>
+  <link href='https://rogermolas.github.io/blogsite/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://rogermolas.github.io/blogsite/img/profile.jpg" />
+  <meta name="twitter:image" content="https://rogermolas.github.io/blogsite/img/profile.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@roger_molas" />
+  <meta name="twitter:creator" content="@roger_molas" />
+  <meta property="og:url" content="https://rogermolas.github.io/blogsite/blog/migrate-from-jekyll/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Roger Molas" />
 
-        <meta name="title" content="Migrate to Hugo from Jekyll | Osprey Example Site">
-
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="chrome=1">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="referrer" content="no-referrer-when-downgrade">
-        <meta name="generator" content="">
-        <base href="https://rogermolas.github.io/blogsite/">
-        <meta name="description" content="Full-stack web developer and UI/UX enthusiast based in San Diego, CA.">
-        
-        <meta name="author" content="Toma Nistor">
-        
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@TomaNistor">
-        <meta name="twitter:creator" content="@TomaNistor">
-        
-        <meta property="og:title" content="Migrate to Hugo from Jekyll | Osprey Example Site">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://rogermolas.github.io/blogsite/">
-        <meta property="og:image" content="https://rogermolas.github.io/blogsite//images/osprey.png">
-        <meta property="og:description" content="Full-stack web developer and UI/UX enthusiast based in San Diego, CA.">
-        
-
-        
-        <link rel="icon" type="image/png" sizes="16x16" href="https://rogermolas.github.io/blogsite/images/logo/favicon.ico">
-        <meta name="theme-color" content="#FFF">
-        
-
-        <link rel="canonical" href="https://rogermolas.github.io/blogsite/blog/migrate-from-jekyll/">
-        
-        <link rel="stylesheet" href="https://rogermolas.github.io/blogsite//styles/main.css" type="text/css">
-        
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/github.min.css">
-        
-    </head>
-
-    <body>
-        
-
-        
-
-        <nav class="row middle-xs center-xs">
-            <div class="col-xs-6 col-sm-1 logo">
-                <a href="https://rogermolas.github.io/blogsite/"><img src="https://rogermolas.github.io/blogsite/images/osprey-logo.png" alt="Osprey Example Site"></a>
-            </div>
-            
-            <div class="col-xs-3 col-sm-2"><h3><a href="https://rogermolas.github.io/blogsite/#about">About</a></h3></div>
-            
-            <div class="col-xs-3 col-sm-2"><h3><a href="https://rogermolas.github.io/blogsite/#work">Work</a></h3></div>
-            
-            <div class="col-xs-3 col-sm-2"><h3><a href="https://rogermolas.github.io/blogsite/#blog">Blog</a></h3></div>
-            
-            <div class="col-xs-3 col-sm-2"><h3><a href="https://rogermolas.github.io/blogsite/#contact">Contact</a></h3></div>
-            
-            <div class="col-xs-6 col-sm-1 nav-toggle">
-                <a href="" class="nav-icon" onclick="return false"><img src="https://rogermolas.github.io/blogsite/images/icon-menu.png" alt="Open Menu"><img src="https://rogermolas.github.io/blogsite/images/icon-x.png" alt="Close Menu" style="display: none;"></a>
-            </div>
-        </nav>
-        <section class="nav-full row middle-xs center-xs">
-            <div class="col-xs-12">
-                <div class="row middle-xs center-xs">
-                    
-                    <div class="col-xs-12"><h1><a href="https://rogermolas.github.io/blogsite/#about">About</a></h1></div>
-                    
-                    <div class="col-xs-12"><h1><a href="https://rogermolas.github.io/blogsite/#work">Work</a></h1></div>
-                    
-                    <div class="col-xs-12"><h1><a href="https://rogermolas.github.io/blogsite/#blog">Blog</a></h1></div>
-                    
-                    <div class="col-xs-12"><h1><a href="https://rogermolas.github.io/blogsite/#contact">Contact</a></h1></div>
-                    
-                </div>
-            </div>
-        </section>
-        <main>
+  <meta name="generator" content="Hugo 0.30.2" />
+  <link rel="canonical" href="https://rogermolas.github.io/blogsite/blog/migrate-from-jekyll/" />
+  <link rel="alternate" href="" type="application/rss+xml" title="Roger Molas">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://rogermolas.github.io/blogsite/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://rogermolas.github.io/blogsite/css/highlighting.css" />
+  <link rel="stylesheet" href="https://rogermolas.github.io/blogsite/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://rogermolas.github.io/blogsite/css/highlight.min.css" />
 
 
-    <section class="container">
-        <section class="content">
-            <h1> Migrate to Hugo from Jekyll </h1>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
 
-            <div class="sub-header">
-                March 2014 · 4 minute read
-            </div>
 
-            <article class="entry-content">
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://rogermolas.github.io/blogsite/">Roger Molas</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="BLOG" href="/blogsite/">BLOG</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="PROJECTS" href="/blogsite/">PROJECTS</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="ABOUT" href="/blogsite/page/about/">ABOUT</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Roger Molas" href="https://rogermolas.github.io/blogsite/">
+            <img class="avatar-img" src="https://rogermolas.github.io/blogsite/img/profile.jpg" alt="Roger Molas" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="blog-heading">
+              <h1>Migrate to Hugo from Jekyll</h1>
                 
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
 
 <h2 id="move-static-content-to-static">Move static content to <code>static</code></h2>
 
@@ -121,7 +205,7 @@ With Jekyll, something that looked like</p>
 
 <h2 id="create-your-hugo-configuration-file">Create your Hugo configuration file</h2>
 
-<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="https://rogermolas.github.io/blogsite/overview/configuration/">Hugo configuration documentation</a> for details.</p>
+<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="/overview/configuration/">Hugo configuration documentation</a> for details.</p>
 
 <h2 id="set-your-configuration-publish-folder-to-site">Set your configuration publish folder to <code>_site</code></h2>
 
@@ -147,13 +231,13 @@ git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
 
 <h2 id="convert-jekyll-templates-to-hugo-templates">Convert Jekyll templates to Hugo templates</h2>
 
-<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="https://rogermolas.github.io/blogsite/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
+<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
 
 <p>As a single reference data point, converting my templates for <a href="http://heyitsalex.net/">heyitsalex.net</a> took me no more than a few hours.</p>
 
 <h2 id="convert-jekyll-plugins-to-hugo-shortcodes">Convert Jekyll plugins to Hugo shortcodes</h2>
 
-<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="https://rogermolas.github.io/blogsite/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
+<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
 
 <h3 id="implementation">Implementation</h3>
 
@@ -266,65 +350,117 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 
 <p><a href="http://heyitsalex.net/">Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.</p>
 
-            </article>
+      </article>
 
-            <div class="pagination">
-                
-                    <a href="https://rogermolas.github.io/blogsite/blog/goisforlovers/">&laquo; (Hu)go Template Primer</a>
-                
-                
-                    <a href="https://rogermolas.github.io/blogsite/blog/creating-a-new-theme/">Creating a New Theme &raquo;</a>
-                
-            </div>
-        </section>
-        <br>
-        <section class="disqus">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        (function() {
-            
-            
-            if (window.location.hostname == "localhost")
-                return;
-            var disqus_shortname = 'tomanistor';
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view comments powered by <a href="http://disqus.com/?ref_noscript">Disqus</a>.</noscript>
-</section>
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://rogermolas.github.io/blogsite/blog/grand-central-dispatch-and-swift-3/" data-toggle="tooltip" data-placement="top" title="Grand Central Dispatch and Swift 3">&larr; Previous Post</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://rogermolas.github.io/blogsite/blog/creating-a-new-theme/" data-toggle="tooltip" data-placement="top" title="Creating a New Theme">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
 
-    </section>
 
-        </main>
-        <footer class="row middle-xs center-xs">
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:contact@rogermolas.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/rogermolas" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/roger_molas" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/rogermolas" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com//users/592526/roger" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
             
-            <div class="col-xs-3 col-md-2"><a href="https://github.com/tomanistor">GitHub</a></div>
+              Roger Molas
             
-            
-            <div class="col-xs-3 col-md-2"><a href="https://linkedin.com/in/tomanistor">LinkedIn</a></div>
-            
-            
-            <div class="col-xs-3 col-md-2"><a href="https://twitter.com/TomaNistor">Twitter</a></div>
-            
-            
-            <div class="col-xs-12">
-                
-                Copyright &copy; 2017 Osprey Example Site.
-                
-                
-                Theme developed by <a href="https://tomanistor.com">Toma Nistor</a>.
-                
-            </div>
-            
-            
-            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-            
-            <script src="https://rogermolas.github.io/blogsite/scripts/main.js" type="text/javascript"></script>
-            
-            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
-        </footer>
-    </body>
+          
+
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://rogermolas.github.io/blogsite/">Roger Molas</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.30.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://rogermolas.github.io/blogsite/js/main.js"></script>
+<script src="https://rogermolas.github.io/blogsite/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="https://rogermolas.github.io/blogsite/js/load-photoswipe.js"></script>
+
+
+
+  </body>
 </html>
 
