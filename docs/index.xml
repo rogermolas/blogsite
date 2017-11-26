@@ -7,20 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
     <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
-    <lastBuildDate>Tue, 27 Jun 2017 17:39:21 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 09 Dec 2016 10:43:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rogermolas.github.io/blogsite/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>https://rogermolas.github.io/blogsite/about/</link>
-      <pubDate>Tue, 27 Jun 2017 17:39:21 -0700</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/about/</guid>
-      <description>Welcome to the Osprey Theme To create an about section, generate an about.md file in your content folder by doing:
-$ hugo new about.md Then add your own content to the markdown file. Everything in the file will be generated to show here on the home page.</description>
-    </item>
     
     <item>
       <title>Grand Central Dispatch and Swift 3</title>
