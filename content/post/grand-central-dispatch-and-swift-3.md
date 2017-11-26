@@ -1,18 +1,10 @@
 ---
-author: rogermolas
-comments: true
+title: "Grand Central Dispatch and Swift 3"
 date: 2016-12-09 10:43:00+00:00
-layout: post
-link: https://rogermolas.wordpress.com/2016/12/09/grand-central-dispatch-and-swift-3/
-slug: grand-central-dispatch-and-swift-3
-title: Grand Central Dispatch and Swift 3
-wordpress_id: 4
-categories:
-- Cocoa
-- Concurrency
-- GCD
-- iOS
-- swift
+draft: false
+categories: [GCD, Swift3, Threading]
+tags: [GCD, Swift3, Multi-Threading]
+author: rogermolas
 ---
 
 **[Grand Central Dispatch](https://developer.apple.com/reference/dispatch) **(GCD or libdispatch) a system level library for managing concurrent operations develop by Apple Inc., it is one of the more complicated and unfriendly APIs in iOS SDK. It was written in C programming language using this API felts like writing low-level C code that executed directly into hardware.
@@ -27,30 +19,30 @@ One of the most common GCD patterns is to perform work on a global background qu
 ### Objective-C
 
 
-[code language="objc"]
+```
 dispatch_queue_t backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
-   dispatch_async(backgroundQueue, ^{
-     UIImage *parsedImage = [UIImage imageWithData:data]  // backround task
-     dispatch_async(dispatch_get_main_queue(), ^{
-        [self displayImage:parsedImage];                  // update UI
-     });
- });
-[/code]
+dispatch_async(backgroundQueue, ^{
+  UIImage *parsedImage = [UIImage imageWithData:data]  // backround task
+  dispatch_async(dispatch_get_main_queue(), ^{
+     [self displayImage:parsedImage];                  // update UI
+  });
+});
+```
 
 
 ### Swift 2.x
 
 
-[code language="objc"]
+```
 let qosClass = QOS_CLASS_BACKGROUND
- let backgroundQueue = dispatch_get_global_queue(qosClass, 0)
- dispatch_async(backgroundQueue, {
-    let parsedImage = UIImage(data: data)              // backround task
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self.display(image: parsedImage)               // update UI
-    });
- });
-[/code]
+let backgroundQueue = dispatch_get_global_queue(qosClass, 0)
+dispatch_async(backgroundQueue, {
+   let parsedImage = UIImage(data: data)              // backround task
+   dispatch_async(dispatch_get_main_queue(), ^{
+      self.display(image: parsedImage)               // update UI
+   });
+});
+```
 
 Both ObjectiveC and Swift(older version) first create the service class by using **DISPATCH_QUEUE_PRIORITY_BACKGROUND**, **QOS_CLASS_BACKGROUND**,  then create the background queue by using system call **dispatch_get_global_queue **which returns instance of **dispatch_queue_t** and pass it to **dispatch_async** call.
 
@@ -64,72 +56,72 @@ Swift 3.0 introduce a new set of data structures and models for Grand Central di
 
 **DispatchQueue** Class enables creating and modifying queues, dispatching synchronously or asynchronously and etc..
 
-[code language="objc"]
+```
 DispatchQueue.global(qos: .background).async {
    let parsedImage = UIImage(data: data)        // backround task
    DispatchQueue.main.async {
       self.display(image: parsedImage)          // update UI
    }
- }
-[/code]
+}
+```
 
 Quality of service is replaces the old priority attributes that were deprecated in iOS8.
 
-[code language="objc"]
- * DISPATCH_QUEUE_PRIORITY_HIGH:        .userInitiated
- * DISPATCH_QUEUE_PRIORITY_DEFAULT:     .default
- * DISPATCH_QUEUE_PRIORITY_LOW:         .utility
- * DISPATCH_QUEUE_PRIORITY_BACKGROUND:  .background
-[/code]
+```
+* DISPATCH_QUEUE_PRIORITY_HIGH:        .userInitiated
+* DISPATCH_QUEUE_PRIORITY_DEFAULT:     .default
+* DISPATCH_QUEUE_PRIORITY_LOW:         .utility
+* DISPATCH_QUEUE_PRIORITY_BACKGROUND:  .background
+```
 
 Some of the queues that we use are already present as DispatchQueue instance
 
 Creating queue using default initializer
 
-[code language="objc"]
+```
 let queue = DispatchQueue(label: "com.process.queue")
-[/code]
+```
 
 Dispatch using the main thread (_dispatch_get_main_queue()_)
 
-[code language="objc"]
+```
+
 DispatchQueue.main.async {
    print("main thread dispatch")
 }
-[/code]
+```
 
 **DispatchWorkItem - **wrap a block of code and pass it to **DispatchQueue**
 
-[code language="objc"]
+```
 let workItem = DispatchWorkItem(qos: .userInitiated, flags: .assignCurrentContext) {
    // Do work here
 }
 queue.async(execute: workItem)
-[/code]
+```
 
 **Dispatch After**
 
-[code language="objc"]
+```
 DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-   // Task invoke after 5 seconds
+  // Task invoke after 5 seconds
 }
-[/code]
+```
 
 **Dispatch assert**
 
-[code language="objc"]
+```
 let queue = DispatchQueue.global(qos: DispatchQoS.QoSClass.default)
 let mainQueue = DispatchQueue.main
 mainQueue.async {
-   dispatchPrecondition(condition: .notOnQueue(mainQueue))
-     // This code won't execute
+dispatchPrecondition(condition: .notOnQueue(mainQueue))
+   // This code won't execute
 }
-
 queue.async {
-   dispatchPrecondition(condition: .onQueue(queue))
-    // This code will execute
+dispatchPrecondition(condition: .onQueue(queue))
+   // This code will execute
 }
-[/code]
+```
 
 **dispatchPrecondition** replace dispatch_assert and allow you to check whether or not you are on the expected thread before executing code.
 
@@ -140,3 +132,5 @@ In Swift 3, **dispatch_once** is deprecated, it should be replace with either gl
 
 
 GCD new APIs bring more flexibility and easy way to get things done,  although its still in beta and **[_documentation_](https://developer.apple.com/reference/dispatch/dispatchqueue)** is still incomplete.
+
+

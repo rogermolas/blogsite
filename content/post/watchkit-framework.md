@@ -1,16 +1,10 @@
 ---
-author: rogermolas
-comments: true
+title: "WatchKit Framework"
 date: 2015-05-13 10:14:00+00:00
-layout: post
-link: https://rogermolas.wordpress.com/2015/05/13/watchkit-framework/
-slug: watchkit-framework
-title: WatchKit Framework
-wordpress_id: 6
-categories:
-- Apple Watch
-- iOS
-- WatchKit
+draft: false
+categories: [Apple Watch, WatchKit]
+tags: [iOS,WatchKit]
+author: rogermolas
 ---
 
 WatchKit is the new framework created by Apple for Apple Watch development, WatchKit is available starting Xcode 6.2 and iOS 8.2.
@@ -35,28 +29,28 @@ Here are some API’s
 
 WKInterfaceController manages the elements in a scene, whereas UIViewController manages a view and its subviews.
 
-[code language="objc"]
+```
 override init(context: AnyObject?) {
    super.init(context: context)
     // ...
 }
-[/code]
+```
 
 It has a designated initializer method that accept optional context object, context is anything you want e.g string, date, numbers or nothing at all.
 
-[code language="objc"]
+```
 override func willActivate() {
    super.willActivate()
     // ...
 }
-[/code]
+```
 
-[code language="objc"]
+```
 override func didDeactivate() {
    super.didDeactivate()
     // ...
 }
-[/code]
+```
 All setup for the interface controller's scene like initialization of elements, properties and any objects is to be done in the initializer and **_"willActivate"_ **method. Both during and after **_"didDeactivate"_** method, the Watch will ignore attempts to update the state of interface elements.
 
 

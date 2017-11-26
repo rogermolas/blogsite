@@ -1,17 +1,10 @@
 ---
-author: rogermolas
-comments: true
+title: "iOS Dependency Management"
 date: 2015-04-10 06:00:00+00:00
-layout: post
-link: https://rogermolas.wordpress.com/2015/04/10/ios-dependency-management/
-slug: ios-dependency-management
-title: iOS Dependency Management
-wordpress_id: 7
-categories:
-- CocoaPods
-- Dependency
-- iOS
-- ruby
+draft: false
+categories: [CocoaPods, Dependency]
+tags: [CocoaPods, Dependency, iOS, ruby]
+author: rogermolas
 ---
 
 As an iOS developer, you certainly use a third-party libraries or a source code made by others to extend your app’s abilities. At first, it seems easy, just drag and drop some source code or libraries in your Xcode project or drag and drop an entire subproject into the parent project and you are done.
@@ -19,8 +12,6 @@ As an iOS developer, you certainly use a third-party libraries or a source code 
 Just imagine how difficult it would be if you had to implement everything from scratch!
 
 However, this has several disadvantages:
-
-
 
 	
   * There’s no central place where you can see all your third party libraries that are available.
@@ -45,58 +36,57 @@ CocoaPods is installed through RubyGems, a package management system for Ruby pr
 
 To install CocoaPods
 
-[code language="bash"]
+```
 $ sudo gem install
-[/code]
+```
 
 Complete the setup of CocoaPods environment
 
-[code language="bash"]
+```
 $ pod setup
-[/code]
-
+```
 
 ## Installing Dependency
 
 
 Navigate to the directory containing your App project
 
-[code language="bash"]
+```
 $ cd ~/Path/Directory/Folder/App
-[/code]
+```
 
 Next enter this command
 
-[code language="bash"]
+```
 $ pod init
-[/code]
+```
 
 This will create a default Podfile for your project.
 Podfile should look like this
 
-[code language="bash"]
+```
 # Uncomment this line to define a global platform for your project
 # platform :ios, '6.0'$ pod install
 target 'App' do
 
 end
-[/code]
+```
 
 A **[Podfile](http://guides.cocoapods.org/syntax/podfile.html)** is where the dependencies of a project are listed.
 
 Add dependency in Podfile
 CocoaPods follows **[Semantic Versioning](http://semver.org/)** conventions
 
-[code language="bash"]
+```
 pod 'AFNetworking', '2.5.1'
-[/code]
+```
 This tells CocoaPods that you want to include AFNetworking version 2.5.1 as a dependency for your project.
 
 Once all of the dependencies have been specified, they can be installed with the following command
 
-[code language="bash"]
+```
 $ pod install
-[/code]
+```
 
 CocoaPods will recursively analyze the dependencies of each project, resolving them into a dependency graph, and serializing into a Podfile.lock file. Podfile.lock keeps track of dependencies version need to be installed.
 
@@ -114,19 +104,19 @@ Subsequent invocations of pod install will add new pods or remove old pods accor
 
 Update the individual dependencies of a project
 
-[code language="bash"]
+```
 $ pod update
-[/code]
+```
+
 Understanding what’s happening behind the scenes can only help you make better apps.
 
 We’ve walked through the entire process, from installing tools, adding sources, creating the .xcodeproj and all its components, to writing everything to disk.
 
 So next time, run the following command and watch the magic happen.
 
-[code language="bash"]
+```
 $ pod install --verbose
-[/code]
-
+```
 
 ## Wrapping Up
 

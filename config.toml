@@ -9,6 +9,9 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 [params]
     useChroma = true
+[taxonomies]
+   tag = "tags"
+   category = "categories"
 #disqusShortname = "XXX"
 #googleAnalytics = "XXX"
 
