@@ -1,4 +1,4 @@
-baseurl = "https://rogermolas.github.io/blogsite/"
+baseurl = "http://www.rogermolas.com/"
 DefaultContentLanguage = "en"
 publishDir = "docs"
 title = "Roger Molas"
