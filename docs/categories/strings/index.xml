@@ -14,6 +14,17 @@
     
     <item>
       <title>New iOS9 String Transformations API</title>
+      <link>http://www.rogermolas.com/blog/new-ios9-string-transformations-api/</link>
+      <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
+      <author>contact@rogermolas.com (Roger Molas)</author>
+      <guid>http://www.rogermolas.com/blog/new-ios9-string-transformations-api/</guid>
+      <description>String transformations formerly done using CFStringTransform a part of Core Foundation Framework. In iOS 9 string transformation can be done along with the new “NSStringTransform*” constants a native Cocoa API and no need to deal with bridging to CFStringRef.
+Here are some of my favorite transformations that can be done with the new NSStringTransform* API.
+print(&amp;quot;roger&amp;quot;.stringByApplyingTransform(NSStringTransformLatinToGreek, reverse: false)!) //ῤογερ print(&amp;quot;roger&amp;quot;.stringByApplyingTransform(NSStringTransformLatinToHangul, reverse: false)!) //로겔 print(&amp;quot;\uD83D\uDC2E&amp;quot;.stringByApplyingTransform(NSStringTransformToUnicodeName, reverse: false)!) //{COW FACE}  </description>
+    </item>
+    
+    <item>
+      <title>New iOS9 String Transformations API</title>
       <link>http://www.rogermolas.com/post/new-ios9-string-transformations-api/</link>
       <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>

@@ -14,12 +14,33 @@
     
     <item>
       <title>Grand Central Dispatch and Swift 3</title>
+      <link>http://www.rogermolas.com/blog/grand-central-dispatch-and-swift-3/</link>
+      <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
+      <author>contact@rogermolas.com (Roger Molas)</author>
+      <guid>http://www.rogermolas.com/blog/grand-central-dispatch-and-swift-3/</guid>
+      <description>Grand Central Dispatch (GCD or libdispatch) a system level library for managing concurrent operations develop by Apple Inc., it is one of the more complicated and unfriendly APIs in iOS SDK. It was written in C programming language using this API felts like writing low-level C code that executed directly into hardware.
+GCD or libdispatch is a combination of logic in the xnu kernel alongside the user-space library. The kernel has the most information available to balance workload across the entire system.</description>
+    </item>
+    
+    <item>
+      <title>Grand Central Dispatch and Swift 3</title>
       <link>http://www.rogermolas.com/post/grand-central-dispatch-and-swift-3/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
       <guid>http://www.rogermolas.com/post/grand-central-dispatch-and-swift-3/</guid>
       <description>Grand Central Dispatch (GCD or libdispatch) a system level library for managing concurrent operations develop by Apple Inc., it is one of the more complicated and unfriendly APIs in iOS SDK. It was written in C programming language using this API felts like writing low-level C code that executed directly into hardware.
 GCD or libdispatch is a combination of logic in the xnu kernel alongside the user-space library. The kernel has the most information available to balance workload across the entire system.</description>
+    </item>
+    
+    <item>
+      <title>New iOS9 String Transformations API</title>
+      <link>http://www.rogermolas.com/blog/new-ios9-string-transformations-api/</link>
+      <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
+      <author>contact@rogermolas.com (Roger Molas)</author>
+      <guid>http://www.rogermolas.com/blog/new-ios9-string-transformations-api/</guid>
+      <description>String transformations formerly done using CFStringTransform a part of Core Foundation Framework. In iOS 9 string transformation can be done along with the new “NSStringTransform*” constants a native Cocoa API and no need to deal with bridging to CFStringRef.
+Here are some of my favorite transformations that can be done with the new NSStringTransform* API.
+print(&amp;quot;roger&amp;quot;.stringByApplyingTransform(NSStringTransformLatinToGreek, reverse: false)!) //ῤογερ print(&amp;quot;roger&amp;quot;.stringByApplyingTransform(NSStringTransformLatinToHangul, reverse: false)!) //로겔 print(&amp;quot;\uD83D\uDC2E&amp;quot;.stringByApplyingTransform(NSStringTransformToUnicodeName, reverse: false)!) //{COW FACE}  </description>
     </item>
     
     <item>
@@ -35,10 +56,10 @@ print(&amp;quot;roger&amp;quot;.stringByApplyingTransform(NSStringTransformLatin
     
     <item>
       <title>WatchKit Framework</title>
-      <link>http://www.rogermolas.com/post/watchkit-framework/</link>
+      <link>http://www.rogermolas.com/blog/watchkit-framework/</link>
       <pubDate>Wed, 13 May 2015 10:14:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/post/watchkit-framework/</guid>
+      <guid>http://www.rogermolas.com/blog/watchkit-framework/</guid>
       <description>WatchKit is the new framework created by Apple for Apple Watch development, WatchKit is available starting Xcode 6.2 and iOS 8.2.
 Analogous to UIKit for iOS apps, the framework allows developers to drop in custom interfaces and interact with your existing iOS app.
 When app is launched on Apple Watch, the WatchKit extension on iPhone runs in the background to update the user interface and respond to user interactions.</description>
@@ -46,10 +67,10 @@ When app is launched on Apple Watch, the WatchKit extension on iPhone runs in th
     
     <item>
       <title>iOS Dependency Management</title>
-      <link>http://www.rogermolas.com/post/ios-dependency-management/</link>
+      <link>http://www.rogermolas.com/blog/ios-dependency-management/</link>
       <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/post/ios-dependency-management/</guid>
+      <guid>http://www.rogermolas.com/blog/ios-dependency-management/</guid>
       <description>As an iOS developer, you certainly use a third-party libraries or a source code made by others to extend your app’s abilities. At first, it seems easy, just drag and drop some source code or libraries in your Xcode project or drag and drop an entire subproject into the parent project and you are done.
 Just imagine how difficult it would be if you had to implement everything from scratch!</description>
     </item>

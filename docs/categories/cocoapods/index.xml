@@ -14,10 +14,10 @@
     
     <item>
       <title>iOS Dependency Management</title>
-      <link>http://www.rogermolas.com/post/ios-dependency-management/</link>
+      <link>http://www.rogermolas.com/blog/ios-dependency-management/</link>
       <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/post/ios-dependency-management/</guid>
+      <guid>http://www.rogermolas.com/blog/ios-dependency-management/</guid>
       <description>As an iOS developer, you certainly use a third-party libraries or a source code made by others to extend your app’s abilities. At first, it seems easy, just drag and drop some source code or libraries in your Xcode project or drag and drop an entire subproject into the parent project and you are done.
 Just imagine how difficult it would be if you had to implement everything from scratch!</description>
     </item>
