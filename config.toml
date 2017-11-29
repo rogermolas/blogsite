@@ -1,4 +1,4 @@
-baseurl = "http://www.rogermolas.com/"
+baseurl = "http://www.rogermolas.com"
 DefaultContentLanguage = "en"
 publishDir = "docs"
 title = "Roger Molas"
