@@ -35,17 +35,17 @@ pygmentsUseClasses = true
 
 [[menu.main]]
     name = "ABOUT"
-    url = "page/about/"
+    url = "about/"
     weight = 3
 
 [[menu.main]]
     name = "PROJECTS"
-    url = ""
+    url = "projects/"
     weight = 2
 
 [[menu.main]]
     name = "BLOG"
-    url = ""
+    url = "blog/"
     weight = 1
 
 
