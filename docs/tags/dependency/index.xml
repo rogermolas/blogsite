@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dependency on Roger Molas</title>
-    <link>https://rogermolas.github.io/blogsite/tags/dependency/</link>
+    <link>http://www.rogermolas.com/tags/dependency/</link>
     <description>Recent content in Dependency on Roger Molas</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
     <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
     <lastBuildDate>Fri, 10 Apr 2015 06:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://rogermolas.github.io/blogsite/tags/dependency/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rogermolas.com/tags/dependency/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>iOS Dependency Management</title>
-      <link>https://rogermolas.github.io/blogsite/post/ios-dependency-management/</link>
+      <link>http://www.rogermolas.com/post/ios-dependency-management/</link>
       <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/post/ios-dependency-management/</guid>
+      <guid>http://www.rogermolas.com/post/ios-dependency-management/</guid>
       <description>As an iOS developer, you certainly use a third-party libraries or a source code made by others to extend your app’s abilities. At first, it seems easy, just drag and drop some source code or libraries in your Xcode project or drag and drop an entire subproject into the parent project and you are done.
 Just imagine how difficult it would be if you had to implement everything from scratch!</description>
     </item>

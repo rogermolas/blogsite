@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Multi Threading on Roger Molas</title>
-    <link>https://rogermolas.github.io/blogsite/tags/multi-threading/</link>
+    <link>http://www.rogermolas.com/tags/multi-threading/</link>
     <description>Recent content in Multi Threading on Roger Molas</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
     <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
     <lastBuildDate>Fri, 09 Dec 2016 10:43:00 +0000</lastBuildDate>
     
-	<atom:link href="https://rogermolas.github.io/blogsite/tags/multi-threading/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rogermolas.com/tags/multi-threading/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Grand Central Dispatch and Swift 3</title>
-      <link>https://rogermolas.github.io/blogsite/post/grand-central-dispatch-and-swift-3/</link>
+      <link>http://www.rogermolas.com/post/grand-central-dispatch-and-swift-3/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/post/grand-central-dispatch-and-swift-3/</guid>
+      <guid>http://www.rogermolas.com/post/grand-central-dispatch-and-swift-3/</guid>
       <description>Grand Central Dispatch (GCD or libdispatch) a system level library for managing concurrent operations develop by Apple Inc., it is one of the more complicated and unfriendly APIs in iOS SDK. It was written in C programming language using this API felts like writing low-level C code that executed directly into hardware.
 GCD or libdispatch is a combination of logic in the xnu kernel alongside the user-space library. The kernel has the most information available to balance workload across the entire system.</description>
     </item>

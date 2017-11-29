@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Roger Molas</title>
-    <link>https://rogermolas.github.io/blogsite/categories/</link>
+    <link>http://www.rogermolas.com/categories/</link>
     <description>Recent content in Categories on Roger Molas</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
     <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
     <lastBuildDate>Wed, 13 May 2015 10:14:00 +0000</lastBuildDate>
     
-	<atom:link href="https://rogermolas.github.io/blogsite/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rogermolas.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Apple Watch</title>
-      <link>https://rogermolas.github.io/blogsite/categories/apple-watch/</link>
+      <link>http://www.rogermolas.com/categories/apple-watch/</link>
       <pubDate>Wed, 13 May 2015 10:14:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/apple-watch/</guid>
+      <guid>http://www.rogermolas.com/categories/apple-watch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cocoapods</title>
-      <link>https://rogermolas.github.io/blogsite/categories/cocoapods/</link>
+      <link>http://www.rogermolas.com/categories/cocoapods/</link>
       <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/cocoapods/</guid>
+      <guid>http://www.rogermolas.com/categories/cocoapods/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dependency</title>
-      <link>https://rogermolas.github.io/blogsite/categories/dependency/</link>
+      <link>http://www.rogermolas.com/categories/dependency/</link>
       <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/dependency/</guid>
+      <guid>http://www.rogermolas.com/categories/dependency/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gcd</title>
-      <link>https://rogermolas.github.io/blogsite/categories/gcd/</link>
+      <link>http://www.rogermolas.com/categories/gcd/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/gcd/</guid>
+      <guid>http://www.rogermolas.com/categories/gcd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nsstringtransform</title>
-      <link>https://rogermolas.github.io/blogsite/categories/nsstringtransform/</link>
+      <link>http://www.rogermolas.com/categories/nsstringtransform/</link>
       <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/nsstringtransform/</guid>
+      <guid>http://www.rogermolas.com/categories/nsstringtransform/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Strings</title>
-      <link>https://rogermolas.github.io/blogsite/categories/strings/</link>
+      <link>http://www.rogermolas.com/categories/strings/</link>
       <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/strings/</guid>
+      <guid>http://www.rogermolas.com/categories/strings/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Swift3</title>
-      <link>https://rogermolas.github.io/blogsite/categories/swift3/</link>
+      <link>http://www.rogermolas.com/categories/swift3/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/swift3/</guid>
+      <guid>http://www.rogermolas.com/categories/swift3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Threading</title>
-      <link>https://rogermolas.github.io/blogsite/categories/threading/</link>
+      <link>http://www.rogermolas.com/categories/threading/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/threading/</guid>
+      <guid>http://www.rogermolas.com/categories/threading/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Watchkit</title>
-      <link>https://rogermolas.github.io/blogsite/categories/watchkit/</link>
+      <link>http://www.rogermolas.com/categories/watchkit/</link>
       <pubDate>Wed, 13 May 2015 10:14:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/categories/watchkit/</guid>
+      <guid>http://www.rogermolas.com/categories/watchkit/</guid>
       <description></description>
     </item>
     

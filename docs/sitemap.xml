@@ -3,152 +3,152 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://rogermolas.github.io/blogsite/post/grand-central-dispatch-and-swift-3/</loc>
+    <loc>http://www.rogermolas.com/post/grand-central-dispatch-and-swift-3/</loc>
     <lastmod>2016-12-09T10:43:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://rogermolas.github.io/blogsite/post/new-ios9-string-transformations-api/</loc>
+    <loc>http://www.rogermolas.com/post/new-ios9-string-transformations-api/</loc>
     <lastmod>2015-06-29T09:44:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://rogermolas.github.io/blogsite/post/watchkit-framework/</loc>
+    <loc>http://www.rogermolas.com/post/watchkit-framework/</loc>
     <lastmod>2015-05-13T10:14:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://rogermolas.github.io/blogsite/post/ios-dependency-management/</loc>
+    <loc>http://www.rogermolas.com/post/ios-dependency-management/</loc>
     <lastmod>2015-04-10T06:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://rogermolas.github.io/blogsite/</loc>
+    <loc>http://www.rogermolas.com/</loc>
     <lastmod>2016-12-09T10:43:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://rogermolas.github.io/blogsite/categories/apple-watch/</loc>
-    <lastmod>2015-05-13T10:14:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/categories/</loc>
+    <loc>http://www.rogermolas.com/categories/apple-watch/</loc>
     <lastmod>2015-05-13T10:14:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rogermolas.github.io/blogsite/tags/cfstring/</loc>
-    <lastmod>2015-06-29T09:44:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/categories/cocoapods/</loc>
-    <lastmod>2015-04-10T06:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/tags/cocoapods/</loc>
-    <lastmod>2015-04-10T06:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/categories/dependency/</loc>
-    <lastmod>2015-04-10T06:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/tags/dependency/</loc>
-    <lastmod>2015-04-10T06:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/categories/gcd/</loc>
-    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/tags/gcd/</loc>
-    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/tags/ios/</loc>
-    <lastmod>2015-06-29T09:44:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/tags/multi-threading/</loc>
-    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/categories/nsstringtransform/</loc>
-    <lastmod>2015-06-29T09:44:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/post/</loc>
-    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/tags/ruby/</loc>
-    <lastmod>2015-04-10T06:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/categories/strings/</loc>
-    <lastmod>2015-06-29T09:44:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/categories/swift3/</loc>
-    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/tags/swift3/</loc>
-    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/tags/</loc>
-    <lastmod>2015-06-29T09:44:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/categories/threading/</loc>
-    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rogermolas.github.io/blogsite/categories/watchkit/</loc>
+    <loc>http://www.rogermolas.com/categories/</loc>
     <lastmod>2015-05-13T10:14:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rogermolas.github.io/blogsite/tags/watchkit/</loc>
+    <loc>http://www.rogermolas.com/tags/cfstring/</loc>
+    <lastmod>2015-06-29T09:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/cocoapods/</loc>
+    <lastmod>2015-04-10T06:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/categories/cocoapods/</loc>
+    <lastmod>2015-04-10T06:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/dependency/</loc>
+    <lastmod>2015-04-10T06:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/categories/dependency/</loc>
+    <lastmod>2015-04-10T06:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/gcd/</loc>
+    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/categories/gcd/</loc>
+    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/ios/</loc>
+    <lastmod>2015-06-29T09:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/multi-threading/</loc>
+    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/categories/nsstringtransform/</loc>
+    <lastmod>2015-06-29T09:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/post/</loc>
+    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/ruby/</loc>
+    <lastmod>2015-04-10T06:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/categories/strings/</loc>
+    <lastmod>2015-06-29T09:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/swift3/</loc>
+    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/categories/swift3/</loc>
+    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/</loc>
+    <lastmod>2015-06-29T09:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/categories/threading/</loc>
+    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/watchkit/</loc>
+    <lastmod>2015-05-13T10:14:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/categories/watchkit/</loc>
     <lastmod>2015-05-13T10:14:00+00:00</lastmod>
     <priority>0</priority>
   </url>

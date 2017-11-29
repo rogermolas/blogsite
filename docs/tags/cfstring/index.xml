@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cfstring on Roger Molas</title>
-    <link>https://rogermolas.github.io/blogsite/tags/cfstring/</link>
+    <link>http://www.rogermolas.com/tags/cfstring/</link>
     <description>Recent content in Cfstring on Roger Molas</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
     <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
     <lastBuildDate>Mon, 29 Jun 2015 09:44:00 +0000</lastBuildDate>
     
-	<atom:link href="https://rogermolas.github.io/blogsite/tags/cfstring/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rogermolas.com/tags/cfstring/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>New iOS9 String Transformations API</title>
-      <link>https://rogermolas.github.io/blogsite/post/new-ios9-string-transformations-api/</link>
+      <link>http://www.rogermolas.com/post/new-ios9-string-transformations-api/</link>
       <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/post/new-ios9-string-transformations-api/</guid>
+      <guid>http://www.rogermolas.com/post/new-ios9-string-transformations-api/</guid>
       <description>String transformations formerly done using CFStringTransform a part of Core Foundation Framework. In iOS 9 string transformation can be done along with the new “NSStringTransform*” constants a native Cocoa API and no need to deal with bridging to CFStringRef.
 Here are some of my favorite transformations that can be done with the new NSStringTransform* API.
 print(&amp;quot;roger&amp;quot;.stringByApplyingTransform(NSStringTransformLatinToGreek, reverse: false)!) //ῤογερ print(&amp;quot;roger&amp;quot;.stringByApplyingTransform(NSStringTransformLatinToHangul, reverse: false)!) //로겔 print(&amp;quot;\uD83D\uDC2E&amp;quot;.stringByApplyingTransform(NSStringTransformToUnicodeName, reverse: false)!) //{COW FACE}  </description>

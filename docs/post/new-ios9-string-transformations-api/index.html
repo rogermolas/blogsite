@@ -16,27 +16,27 @@ Here are some of my favorite transformations that can be done with the new NSStr
 print(&quot;roger&quot;.stringByApplyingTransform(NSStringTransformLatinToGreek, reverse: false)!) //ῤογερ print(&quot;roger&quot;.stringByApplyingTransform(NSStringTransformLatinToHangul, reverse: false)!) //로겔 print(&quot;\uD83D\uDC2E&quot;.stringByApplyingTransform(NSStringTransformToUnicodeName, reverse: false)!) //{COW FACE}  ">
   <meta name="twitter:description" content="String transformations formerly done using CFStringTransform a part of Core Foundation Framework. In iOS 9 string transformation can be done along with the new “NSStringTransform*” constants a native …">
   <meta name="author" content="Roger Molas"/>
-  <link href='https://rogermolas.github.io/blogsite/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta property="og:image" content="https://rogermolas.github.io/blogsite/img/profile.jpg" />
-  <meta name="twitter:image" content="https://rogermolas.github.io/blogsite/img/profile.jpg" />
+  <link href='http://www.rogermolas.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="http://www.rogermolas.com/img/profile.jpg" />
+  <meta name="twitter:image" content="http://www.rogermolas.com/img/profile.jpg" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@roger_molas" />
   <meta name="twitter:creator" content="@roger_molas" />
-  <meta property="og:url" content="https://rogermolas.github.io/blogsite/post/new-ios9-string-transformations-api/" />
+  <meta property="og:url" content="http://www.rogermolas.com/post/new-ios9-string-transformations-api/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Roger Molas" />
 
   <meta name="generator" content="Hugo 0.30.2" />
-  <link rel="canonical" href="https://rogermolas.github.io/blogsite/post/new-ios9-string-transformations-api/" />
+  <link rel="canonical" href="http://www.rogermolas.com/post/new-ios9-string-transformations-api/" />
   <link rel="alternate" href="" type="application/rss+xml" title="Roger Molas">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://rogermolas.github.io/blogsite/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="http://www.rogermolas.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-  <link rel="stylesheet" href="https://rogermolas.github.io/blogsite/css/highlighting.css" />
-  <link rel="stylesheet" href="https://rogermolas.github.io/blogsite/css/pygment_highlights.css" />
-  <link rel="stylesheet" href="https://rogermolas.github.io/blogsite/css/highlight.min.css" />
+  <link rel="stylesheet" href="http://www.rogermolas.com/css/highlighting.css" />
+  <link rel="stylesheet" href="http://www.rogermolas.com/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="http://www.rogermolas.com/css/highlight.min.css" />
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
@@ -100,7 +100,7 @@ print(&quot;roger&quot;.stringByApplyingTransform(NSStringTransformLatinToGreek,
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://rogermolas.github.io/blogsite/">Roger Molas</a>
+      <a class="navbar-brand" href="http://www.rogermolas.com/">Roger Molas</a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -108,19 +108,19 @@ print(&quot;roger&quot;.stringByApplyingTransform(NSStringTransformLatinToGreek,
         
           
             <li>
-              <a title="BLOG" href="/blogsite/">BLOG</a>
+              <a title="BLOG" href="/">BLOG</a>
             </li>
           
         
           
             <li>
-              <a title="PROJECTS" href="/blogsite/">PROJECTS</a>
+              <a title="PROJECTS" href="/">PROJECTS</a>
             </li>
           
         
           
             <li>
-              <a title="ABOUT" href="/blogsite/page/about/">ABOUT</a>
+              <a title="ABOUT" href="/page/about/">ABOUT</a>
             </li>
           
         
@@ -134,8 +134,8 @@ print(&quot;roger&quot;.stringByApplyingTransform(NSStringTransformLatinToGreek,
     <div class="avatar-container">
       <div class="avatar-img-border">
         
-          <a title="Roger Molas" href="https://rogermolas.github.io/blogsite/">
-            <img class="avatar-img" src="https://rogermolas.github.io/blogsite/img/profile.jpg" alt="Roger Molas" />
+          <a title="Roger Molas" href="http://www.rogermolas.com/">
+            <img class="avatar-img" src="http://www.rogermolas.com/img/profile.jpg" alt="Roger Molas" />
           </a>
         
       </div>
@@ -206,12 +206,12 @@ print(&quot;\uD83D\uDC2E&quot;.stringByApplyingTransform(NSStringTransformToUnic
       <ul class="pager blog-pager">
         
           <li class="previous">
-            <a href="https://rogermolas.github.io/blogsite/post/watchkit-framework/" data-toggle="tooltip" data-placement="top" title="WatchKit Framework">&larr; Previous Post</a>
+            <a href="http://www.rogermolas.com/post/watchkit-framework/" data-toggle="tooltip" data-placement="top" title="WatchKit Framework">&larr; Previous Post</a>
           </li>
         
         
           <li class="next">
-            <a href="https://rogermolas.github.io/blogsite/post/grand-central-dispatch-and-swift-3/" data-toggle="tooltip" data-placement="top" title="Grand Central Dispatch and Swift 3">Next Post &rarr;</a>
+            <a href="http://www.rogermolas.com/post/grand-central-dispatch-and-swift-3/" data-toggle="tooltip" data-placement="top" title="Grand Central Dispatch and Swift 3">Next Post &rarr;</a>
           </li>
         
       </ul>
@@ -286,7 +286,7 @@ print(&quot;\uD83D\uDC2E&quot;.stringByApplyingTransform(NSStringTransformToUnic
 
           
             &nbsp;&bull;&nbsp;
-            <a href="https://rogermolas.github.io/blogsite/">Roger Molas</a>
+            <a href="http://www.rogermolas.com/">Roger Molas</a>
           
         </p>
         
@@ -303,12 +303,12 @@ print(&quot;\uD83D\uDC2E&quot;.stringByApplyingTransform(NSStringTransformToUnic
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://rogermolas.github.io/blogsite/js/main.js"></script>
-<script src="https://rogermolas.github.io/blogsite/js/highlight.min.js"></script>
+<script src="http://www.rogermolas.com/js/main.js"></script>
+<script src="http://www.rogermolas.com/js/highlight.min.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script><script> renderMathInElement(document.body); </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
-<script src="https://rogermolas.github.io/blogsite/js/load-photoswipe.js"></script>
+<script src="http://www.rogermolas.com/js/load-photoswipe.js"></script>
 
 
 

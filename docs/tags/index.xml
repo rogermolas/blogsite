@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Roger Molas</title>
-    <link>https://rogermolas.github.io/blogsite/tags/</link>
+    <link>http://www.rogermolas.com/tags/</link>
     <description>Recent content in Tags on Roger Molas</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
     <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
     <lastBuildDate>Mon, 29 Jun 2015 09:44:00 +0000</lastBuildDate>
     
-	<atom:link href="https://rogermolas.github.io/blogsite/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rogermolas.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cfstring</title>
-      <link>https://rogermolas.github.io/blogsite/tags/cfstring/</link>
+      <link>http://www.rogermolas.com/tags/cfstring/</link>
       <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/tags/cfstring/</guid>
+      <guid>http://www.rogermolas.com/tags/cfstring/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cocoapods</title>
-      <link>https://rogermolas.github.io/blogsite/tags/cocoapods/</link>
+      <link>http://www.rogermolas.com/tags/cocoapods/</link>
       <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/tags/cocoapods/</guid>
+      <guid>http://www.rogermolas.com/tags/cocoapods/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dependency</title>
-      <link>https://rogermolas.github.io/blogsite/tags/dependency/</link>
+      <link>http://www.rogermolas.com/tags/dependency/</link>
       <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/tags/dependency/</guid>
+      <guid>http://www.rogermolas.com/tags/dependency/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gcd</title>
-      <link>https://rogermolas.github.io/blogsite/tags/gcd/</link>
+      <link>http://www.rogermolas.com/tags/gcd/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/tags/gcd/</guid>
+      <guid>http://www.rogermolas.com/tags/gcd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ios</title>
-      <link>https://rogermolas.github.io/blogsite/tags/ios/</link>
+      <link>http://www.rogermolas.com/tags/ios/</link>
       <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/tags/ios/</guid>
+      <guid>http://www.rogermolas.com/tags/ios/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Multi Threading</title>
-      <link>https://rogermolas.github.io/blogsite/tags/multi-threading/</link>
+      <link>http://www.rogermolas.com/tags/multi-threading/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/tags/multi-threading/</guid>
+      <guid>http://www.rogermolas.com/tags/multi-threading/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ruby</title>
-      <link>https://rogermolas.github.io/blogsite/tags/ruby/</link>
+      <link>http://www.rogermolas.com/tags/ruby/</link>
       <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/tags/ruby/</guid>
+      <guid>http://www.rogermolas.com/tags/ruby/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Swift3</title>
-      <link>https://rogermolas.github.io/blogsite/tags/swift3/</link>
+      <link>http://www.rogermolas.com/tags/swift3/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/tags/swift3/</guid>
+      <guid>http://www.rogermolas.com/tags/swift3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Watchkit</title>
-      <link>https://rogermolas.github.io/blogsite/tags/watchkit/</link>
+      <link>http://www.rogermolas.com/tags/watchkit/</link>
       <pubDate>Wed, 13 May 2015 10:14:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>https://rogermolas.github.io/blogsite/tags/watchkit/</guid>
+      <guid>http://www.rogermolas.com/tags/watchkit/</guid>
       <description></description>
     </item>
     
