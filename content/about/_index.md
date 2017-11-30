@@ -1,3 +1,8 @@
+---
+title: "About"
+draft: false
+author: rogermolas
+---
 ## About Me
 
 My name is Roger Molas. I'm a Freelance [ iOS Developer](https://github.com/rogermolas). This** blog, its content, thoughts and opinions are my own.** I blog about technology, code, iOS development, Swift, Objective C and anything related to that. I'm excited about, innovation, community, social equity, stocks and entrepreneurship.
