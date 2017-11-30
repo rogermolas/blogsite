@@ -42,10 +42,6 @@
   </url>
   
   <url>
-    <loc>http://www.rogermolas.com/projects/</loc>
-  </url>
-  
-  <url>
     <loc>http://www.rogermolas.com/categories/apple-watch/</loc>
     <lastmod>2015-05-13T10:14:00+00:00</lastmod>
     <priority>0</priority>
@@ -127,6 +123,10 @@
     <loc>http://www.rogermolas.com/post/</loc>
     <lastmod>2016-12-09T10:43:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/projects/</loc>
   </url>
   
   <url>
