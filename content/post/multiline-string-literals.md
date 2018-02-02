@@ -1,7 +1,7 @@
 ---
 title: "Multiline String Literals"
 date: 2017-07-01T14:07:14+00:00
-draft: true
+draft: false
 categories: [String, Swift4]
 tags: [String, Swift4]
 author: rogermolas
