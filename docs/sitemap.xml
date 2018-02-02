@@ -66,19 +66,13 @@
   </url>
   
   <url>
-    <loc>http://www.rogermolas.com/tags/cocoapods/</loc>
-    <lastmod>2015-04-10T06:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://www.rogermolas.com/categories/cocoapods/</loc>
     <lastmod>2015-04-10T06:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rogermolas.com/tags/dependency/</loc>
+    <loc>http://www.rogermolas.com/tags/cocoapods/</loc>
     <lastmod>2015-04-10T06:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -90,13 +84,19 @@
   </url>
   
   <url>
-    <loc>http://www.rogermolas.com/tags/gcd/</loc>
-    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <loc>http://www.rogermolas.com/tags/dependency/</loc>
+    <lastmod>2015-04-10T06:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.rogermolas.com/categories/gcd/</loc>
+    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/gcd/</loc>
     <lastmod>2016-12-09T10:43:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -142,13 +142,13 @@
   </url>
   
   <url>
-    <loc>http://www.rogermolas.com/tags/swift3/</loc>
+    <loc>http://www.rogermolas.com/categories/swift3/</loc>
     <lastmod>2016-12-09T10:43:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rogermolas.com/categories/swift3/</loc>
+    <loc>http://www.rogermolas.com/tags/swift3/</loc>
     <lastmod>2016-12-09T10:43:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -166,13 +166,13 @@
   </url>
   
   <url>
-    <loc>http://www.rogermolas.com/tags/watchkit/</loc>
+    <loc>http://www.rogermolas.com/categories/watchkit/</loc>
     <lastmod>2015-05-13T10:14:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rogermolas.com/categories/watchkit/</loc>
+    <loc>http://www.rogermolas.com/tags/watchkit/</loc>
     <lastmod>2015-05-13T10:14:00+00:00</lastmod>
     <priority>0</priority>
   </url>
