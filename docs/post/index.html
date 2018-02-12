@@ -164,6 +164,38 @@
         <div class="posts-list">
           
             <article class="post-preview">
+              <a href="http://www.rogermolas.com/post/mapkit-generate-image-snapshotter/">
+                <h2 class="post-title">Generate MapView Snapshot with Snapshotter</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on February 12, 2018
+              </p>
+              <div class="post-entry">
+                
+                  MKMapSnapshotter is use in creating an image representation of a map view. Previously, other developers use UIGraphicsContext, but now images can reliably be created for any particular region and perspective.
+Creating a Map View Snapshot let mapSnapshotOptions = MKMapSnapshotOptions() mapSnapshotOptions.region = mapView.region mapSnapshotOptions.scale = UIScreen.main.scale mapSnapshotOptions.size = mapView.frame.size mapSnapshotOptions.showsBuildings = true mapSnapshotOptions.showsPointsOfInterest = true let snapShotter = MKMapSnapshotter(options: mapSnapshotOptions) snapShotter.start { (snap, error) in let image = snap?.image imageView.image = image }  According to Apple&rsquo;s MKMapSnapshot doc
+                  <a href="http://www.rogermolas.com/post/mapkit-generate-image-snapshotter/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="http://www.rogermolas.comtags/mkmapsnapshot/">MKMapSnapshot</a>&nbsp;
+                  
+                    #<a href="http://www.rogermolas.comtags/mapkit/">MapKit</a>&nbsp;
+                  
+                    #<a href="http://www.rogermolas.comtags/swift4/">Swift4</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="http://www.rogermolas.com/post/multiline-string-literals/">
                 <h2 class="post-title">Multiline String Literals</h2>
 
@@ -219,45 +251,6 @@ GCD or libdispatch is a combination of logic in the xnu kernel alongside the use
                     #<a href="http://www.rogermolas.comtags/swift3/">Swift3</a>&nbsp;
                   
                     #<a href="http://www.rogermolas.comtags/multi-threading/">Multi-Threading</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="http://www.rogermolas.com/post/new-ios9-string-transformations-api/">
-                <h2 class="post-title">New iOS9 String Transformations API</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on June 29, 2015
-              </p>
-              <div class="post-entry">
-                
-                  <p>String transformations formerly done using CFStringTransform a part of Core Foundation Framework. In iOS 9 string transformation can be done along with the new <em>“</em><strong><em>NSStringTransform*</em></strong><em>”</em> constants a native Cocoa API and no need to deal with bridging to <strong><em>CFStringRef</em></strong>.</p>
-
-<p>Here are some of my favorite transformations that can be done with the new NSStringTransform* API.</p>
-
-<pre><code>print(&quot;roger&quot;.stringByApplyingTransform(NSStringTransformLatinToGreek, reverse: false)!)
-//ῤογερ
-print(&quot;roger&quot;.stringByApplyingTransform(NSStringTransformLatinToHangul, reverse: false)!)
-//로겔
-print(&quot;\uD83D\uDC2E&quot;.stringByApplyingTransform(NSStringTransformToUnicodeName, reverse: false)!)
-//{COW FACE}
-</code></pre>
-
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="http://www.rogermolas.comtags/ios/">iOS</a>&nbsp;
-                  
-                    #<a href="http://www.rogermolas.comtags/cfstring/">CFString</a>&nbsp;
                   
                 </span>
               
@@ -326,7 +319,7 @@ print(&quot;\uD83D\uDC2E&quot;.stringByApplyingTransform(NSStringTransformToUnic
           
 
           &nbsp;&bull;&nbsp;
-          2017
+          2018
 
           
             &nbsp;&bull;&nbsp;
