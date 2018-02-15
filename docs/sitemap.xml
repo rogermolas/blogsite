@@ -53,6 +53,14 @@
   </url>
   
   <url>
+    <loc>http://www.rogermolas.com/policies/privacy/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/policies/terms/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.rogermolas.com/about/</loc>
   </url>
   
@@ -155,6 +163,11 @@
   <url>
     <loc>http://www.rogermolas.com/categories/nsstringtransform/</loc>
     <lastmod>2015-06-29T09:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/policies/</loc>
     <priority>0</priority>
   </url>
   
