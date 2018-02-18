@@ -23,6 +23,9 @@ If you want to help, share your blessings [here](https://donate.unhcr.ph/shareho
 
 That’s me, today. I’ll be different tomorrow, and getting better and better each day.
 
+#### My Developer [Story](https://stackoverflow.com/story/rogermolas)
+
+
 ## Contact
 Im at [Twitter](https://twitter.com/roger_molas), [LinkedIn](https://ph.linkedin.com/in/rogermolas), if you want to contact me go ahead send me an [email](mailto:contact@rogermolas.com) :)
 

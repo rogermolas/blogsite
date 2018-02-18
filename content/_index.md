@@ -7,6 +7,8 @@ Started programming at high school with BASIC and C, from there i got engaged wi
 2012 from the province I moved to central business district to continue  exploring, growing and learning things.
 Check [projects](projects/) page to see some of my work.
 
+#### My Developer [Story](https://stackoverflow.com/story/rogermolas)
+
 ## Contact
 Im at [Twitter](https://twitter.com/roger_molas), [LinkedIn](https://ph.linkedin.com/in/rogermolas), if you want to contact me go ahead send me an [email](mailto:contact@rogermolas.com) :)
 
