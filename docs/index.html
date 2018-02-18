@@ -32,7 +32,7 @@ Started programming at high school with BASIC and C, from there i got engaged wi
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Roger Molas" />
 
-  <meta name="generator" content="Hugo 0.30.2" />
+  <meta name="generator" content="Hugo 0.32.3" />
   <link rel="canonical" href="http://www.rogermolas.com/" />
   <link rel="alternate" href="http://www.rogermolas.com/index.xml" type="application/rss+xml" title="Roger Molas">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -134,8 +134,15 @@ Started programming at high school with BASIC and C, from there i got engaged wi
           
         
           
-            <li>
-              <a title="ABOUT" href="/about/">ABOUT</a>
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">ABOUT</a>
+              <div class="navlinks-children">
+                
+                  <a href="/about/">ME</a>
+                
+                  <a href="/policies/privacy/">PRIVACY POLICY</a>
+                
+              </div>
             </li>
           
         
@@ -224,6 +231,74 @@ Check <a href="projects/">projects</a> page to see some of my work.</p>
           
           
             <article class="post-preview">
+              <a href="http://www.rogermolas.com/post/mapkit-generate-image-snapshotter/">
+                <h2 class="post-title">Generate MapView Snapshot with Snapshotter</h2>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on February 12, 2018
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 1 min (201 mots)
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  MKMapSnapshotter is use in creating an image representation of a map view. Previously, other developers use UIGraphicsContext, but now images can reliably be created for any particular region and perspective.
+Creating a Map View Snapshot let mapSnapshotOptions = MKMapSnapshotOptions() mapSnapshotOptions.region = mapView.region mapSnapshotOptions.scale = UIScreen.main.scale mapSnapshotOptions.size = mapView.frame.size mapSnapshotOptions.showsBuildings = true mapSnapshotOptions.showsPointsOfInterest = true let snapShotter = MKMapSnapshotter(options: mapSnapshotOptions) snapShotter.start { (snap, error) in let image = snap?.image imageView.image = image }  According to Apple&rsquo;s MKMapSnapshot doc
+                  <a href="http://www.rogermolas.com/post/mapkit-generate-image-snapshotter/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="http://www.rogermolas.comtags/mkmapsnapshot/">MKMapSnapshot</a>&nbsp;
+                
+                  #<a href="http://www.rogermolas.comtags/mapkit/">MapKit</a>&nbsp;
+                
+                  #<a href="http://www.rogermolas.comtags/swift4/">Swift4</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="http://www.rogermolas.com/post/multiline-string-literals/">
+                <h2 class="post-title">Multiline String Literals</h2>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on July 1, 2017
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 1 min (114 mots)
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  Long strings are strings delimited by &quot;&quot;&quot;triple quotes&quot;&quot;&quot; that can contain newlines and individual &ldquo; characters without the need to escape them. SE-0168 Multi-Line String Literals
+Multi-Line String Literal Creation let lines = &quot;&quot;&quot; This is line one This is line two This is line three &quot;&quot;&quot; print(&quot;Multi-Line String: \(lines)&quot;)  Mutation let myString = &quot;&quot;&quot; Hello Multi line string! This is sample of mutating string. End here &quot;&quot;&quot; let startingIndex = myString.
+                  <a href="http://www.rogermolas.com/post/multiline-string-literals/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="http://www.rogermolas.comtags/string/">String</a>&nbsp;
+                
+                  #<a href="http://www.rogermolas.comtags/swift4/">Swift4</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
               <a href="http://www.rogermolas.com/post/grand-central-dispatch-and-swift-3/">
                 <h2 class="post-title">Grand Central Dispatch and Swift 3</h2>
                 
@@ -253,48 +328,6 @@ GCD or libdispatch is a combination of logic in the xnu kernel alongside the use
                   #<a href="http://www.rogermolas.comtags/swift3/">Swift3</a>&nbsp;
                 
                   #<a href="http://www.rogermolas.comtags/multi-threading/">Multi-Threading</a>&nbsp;
-                
-                </span>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="http://www.rogermolas.com/post/new-ios9-string-transformations-api/">
-                <h2 class="post-title">New iOS9 String Transformations API</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on June 29, 2015
-  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 1 min (68 mots)
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  <p>String transformations formerly done using CFStringTransform a part of Core Foundation Framework. In iOS 9 string transformation can be done along with the new <em>“</em><strong><em>NSStringTransform*</em></strong><em>”</em> constants a native Cocoa API and no need to deal with bridging to <strong><em>CFStringRef</em></strong>.</p>
-
-<p>Here are some of my favorite transformations that can be done with the new NSStringTransform* API.</p>
-
-<pre><code>print(&quot;roger&quot;.stringByApplyingTransform(NSStringTransformLatinToGreek, reverse: false)!)
-//ῤογερ
-print(&quot;roger&quot;.stringByApplyingTransform(NSStringTransformLatinToHangul, reverse: false)!)
-//로겔
-print(&quot;\uD83D\uDC2E&quot;.stringByApplyingTransform(NSStringTransformToUnicodeName, reverse: false)!)
-//{COW FACE}
-</code></pre>
-
-                
-              </div>
-
-              
-                <span class="post-meta">
-                
-                  #<a href="http://www.rogermolas.comtags/ios/">iOS</a>&nbsp;
-                
-                  #<a href="http://www.rogermolas.comtags/cfstring/">CFString</a>&nbsp;
                 
                 </span>
               
@@ -363,7 +396,7 @@ print(&quot;\uD83D\uDC2E&quot;.stringByApplyingTransform(NSStringTransformToUnic
           
 
           &nbsp;&bull;&nbsp;
-          2016
+          2018
 
           
             &nbsp;&bull;&nbsp;
@@ -372,7 +405,7 @@ print(&quot;\uD83D\uDC2E&quot;.stringByApplyingTransform(NSStringTransformToUnic
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.30.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.32.3</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

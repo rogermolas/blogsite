@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Roger Molas</title>
+    <link>http://www.rogermolas.com/policies/terms/</link>
+    <description>Recent content on Roger Molas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
+    <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
+    
+	<atom:link href="http://www.rogermolas.com/policies/terms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mapkit on Roger Molas</title>
+    <link>http://www.rogermolas.com/categories/mapkit/</link>
+    <description>Recent content in Mapkit on Roger Molas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
+    <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
+    <lastBuildDate>Mon, 12 Feb 2018 14:29:02 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.rogermolas.com/categories/mapkit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Generate MapView Snapshot with Snapshotter</title>
+      <link>http://www.rogermolas.com/blog/mapkit-generate-image-snapshotter/</link>
+      <pubDate>Mon, 12 Feb 2018 14:29:02 +0800</pubDate>
+      <author>contact@rogermolas.com (Roger Molas)</author>
+      <guid>http://www.rogermolas.com/blog/mapkit-generate-image-snapshotter/</guid>
+      <description>MKMapSnapshotter is use in creating an image representation of a map view. Previously, other developers use UIGraphicsContext, but now images can reliably be created for any particular region and perspective.
+Creating a Map View Snapshot let mapSnapshotOptions = MKMapSnapshotOptions() mapSnapshotOptions.region = mapView.region mapSnapshotOptions.scale = UIScreen.main.scale mapSnapshotOptions.size = mapView.frame.size mapSnapshotOptions.showsBuildings = true mapSnapshotOptions.showsPointsOfInterest = true let snapShotter = MKMapSnapshotter(options: mapSnapshotOptions) snapShotter.start { (snap, error) in let image = snap?.image imageView.image = image }  According to Apple&amp;rsquo;s MKMapSnapshot doc</description>
+    </item>
+    
+    <item>
+      <title>Generate MapView Snapshot with Snapshotter</title>
+      <link>http://www.rogermolas.com/post/mapkit-generate-image-snapshotter/</link>
+      <pubDate>Mon, 12 Feb 2018 14:29:02 +0800</pubDate>
+      <author>contact@rogermolas.com (Roger Molas)</author>
+      <guid>http://www.rogermolas.com/post/mapkit-generate-image-snapshotter/</guid>
+      <description>MKMapSnapshotter is use in creating an image representation of a map view. Previously, other developers use UIGraphicsContext, but now images can reliably be created for any particular region and perspective.
+Creating a Map View Snapshot let mapSnapshotOptions = MKMapSnapshotOptions() mapSnapshotOptions.region = mapView.region mapSnapshotOptions.scale = UIScreen.main.scale mapSnapshotOptions.size = mapView.frame.size mapSnapshotOptions.showsBuildings = true mapSnapshotOptions.showsPointsOfInterest = true let snapShotter = MKMapSnapshotter(options: mapSnapshotOptions) snapShotter.start { (snap, error) in let image = snap?.image imageView.image = image }  According to Apple&amp;rsquo;s MKMapSnapshot doc</description>
+    </item>
+    
+  </channel>
+</rss>

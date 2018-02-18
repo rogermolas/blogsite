@@ -29,6 +29,18 @@ title : Projects
 </tr>
 </table>
 
+### My Personal Apps
+<table style="width:100%">
+<tr>
+    <th>Name</th>
+    <th>Category</th>
+</tr>
+<tr>
+    <td><a href="https://itunes.apple.com/ph/app/takbo/id1348697598?mt=8">Takbo</td>
+    <td>Health & Fitness</td>
+</tr>
+</table>
+
 ### Other Freelance Work
 <table style="width:100%">
 <tr>
@@ -49,7 +61,7 @@ title : Projects
 </tr>
 </table>
 
-### Open Source
+### Open Source Library/Tools
 <table style="width:100%">
 <tr>
     <th>Name</th>

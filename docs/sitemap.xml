@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.rogermolas.com/blog/mapkit-generate-image-snapshotter/</loc>
+    <lastmod>2018-02-12T14:29:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/post/mapkit-generate-image-snapshotter/</loc>
+    <lastmod>2018-02-12T14:29:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/blog/multiline-string-literals/</loc>
+    <lastmod>2017-07-01T14:07:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/post/multiline-string-literals/</loc>
+    <lastmod>2017-07-01T14:07:14+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.rogermolas.com/blog/grand-central-dispatch-and-swift-3/</loc>
     <lastmod>2016-12-09T10:43:00+00:00</lastmod>
   </url>
@@ -18,11 +38,6 @@
   </url>
   
   <url>
-    <loc>http://www.rogermolas.com/post/new-ios9-string-transformations-api/</loc>
-    <lastmod>2015-06-29T09:44:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.rogermolas.com/blog/watchkit-framework/</loc>
     <lastmod>2015-05-13T10:14:00+00:00</lastmod>
   </url>
@@ -34,7 +49,15 @@
   
   <url>
     <loc>http://www.rogermolas.com/</loc>
-    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <lastmod>2018-02-12T14:29:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/policies/privacy/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/policies/terms/</loc>
   </url>
   
   <url>
@@ -49,7 +72,7 @@
   
   <url>
     <loc>http://www.rogermolas.com/blog/</loc>
-    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <lastmod>2018-02-12T14:29:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -108,6 +131,30 @@
   </url>
   
   <url>
+    <loc>http://www.rogermolas.com/tags/mapkit/</loc>
+    <lastmod>2018-02-12T14:29:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/categories/mapkit/</loc>
+    <lastmod>2018-02-12T14:29:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/mkmapsnapshot/</loc>
+    <lastmod>2018-02-12T14:29:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/categories/mkmapsnapshot/</loc>
+    <lastmod>2018-02-12T14:29:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.rogermolas.com/tags/multi-threading/</loc>
     <lastmod>2016-12-09T10:43:00+00:00</lastmod>
     <priority>0</priority>
@@ -120,8 +167,13 @@
   </url>
   
   <url>
+    <loc>http://www.rogermolas.com/policies/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.rogermolas.com/post/</loc>
-    <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <lastmod>2018-02-12T14:29:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -132,6 +184,18 @@
   <url>
     <loc>http://www.rogermolas.com/tags/ruby/</loc>
     <lastmod>2015-04-10T06:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/string/</loc>
+    <lastmod>2017-07-01T14:07:14+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/categories/string/</loc>
+    <lastmod>2017-07-01T14:07:14+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -150,6 +214,18 @@
   <url>
     <loc>http://www.rogermolas.com/categories/swift3/</loc>
     <lastmod>2016-12-09T10:43:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/tags/swift4/</loc>
+    <lastmod>2018-02-12T14:29:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rogermolas.com/categories/swift4/</loc>
+    <lastmod>2017-07-01T14:07:14+00:00</lastmod>
     <priority>0</priority>
   </url>
   
