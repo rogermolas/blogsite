@@ -67,29 +67,35 @@ title : Projects
     <th>Name</th>
     <th>Category</th>
 </tr>
+
 <tr>
     <td><a href="https://github.com/rogermolas/RMSpriteButton">RMSpriteButton</td>
-    <td>UKit Controls, Pods</td>
+    <td>UKit Controls, UIButton like control for SpriteKit</td>
 </tr>
+
+<tr>
+    <td><a href="https://github.com/rogermolas/RMFloatingAction">RMFloatingAction</td>
+    <td>UKit Controls, Android like floating action button.</td>
+</tr>
+
+<tr>
+    <td><a href="https://github.com/rogermolas/RMHttp">RMHttp</td>
+    <td>Networking, Lightweight REST library for iOS and watchOS.</td>
+</tr>
+
 <tr>
     <td><a href="https://github.com/rogermolas/findit-for-xcode">Find It</td>
     <td>XCode IDE Plugin</td>
 </tr>
-<tr>
-    <td><a href="https://github.com/rogermolas/QRReaderLib">QRReaderLib</td>
-    <td>Utilities, Library</td>
-</tr>
+
 <tr>
     <td><a href="https://github.com/rogermolas/emacs-config">Emacs Config</td>
     <td>IDE Like Editor, Tools</td>
 </tr>
+
 <tr>
-    <td>RMNetUtil</td>
-    <td>Tools, Network Utilities for iOS</td>
-</tr>
-<tr>
-<td>RMCLi</td>
+    <td>RMCLi</td>
     <td>Tools, Automate App distribution</td>
-    </tr>
+</tr>
 </table>
 
