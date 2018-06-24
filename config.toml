@@ -1,4 +1,4 @@
-baseurl = "http://blog.rogermolas.com"
+baseurl = "http://blog.rogermolas.com/"
 title = "Roger Molas"
 theme = "temple"
 publishDir = "docs"
