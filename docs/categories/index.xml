@@ -2,130 +2,131 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Roger Molas</title>
-    <link>http://www.rogermolas.com/categories/</link>
+    <link>http://blog.rogermolas.com/categories/</link>
     <description>Recent content in Categories on Roger Molas</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
     <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
+    <copyright>(c) 2017 - 2018 Roger Molas -- All rights reserved.</copyright>
     <lastBuildDate>Wed, 13 May 2015 10:14:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.rogermolas.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.rogermolas.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Apple Watch</title>
-      <link>http://www.rogermolas.com/categories/apple-watch/</link>
+      <link>http://blog.rogermolas.com/categories/apple-watch/</link>
       <pubDate>Wed, 13 May 2015 10:14:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/apple-watch/</guid>
+      <guid>http://blog.rogermolas.com/categories/apple-watch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cocoapods</title>
-      <link>http://www.rogermolas.com/categories/cocoapods/</link>
+      <link>http://blog.rogermolas.com/categories/cocoapods/</link>
       <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/cocoapods/</guid>
+      <guid>http://blog.rogermolas.com/categories/cocoapods/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dependency</title>
-      <link>http://www.rogermolas.com/categories/dependency/</link>
+      <link>http://blog.rogermolas.com/categories/dependency/</link>
       <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/dependency/</guid>
+      <guid>http://blog.rogermolas.com/categories/dependency/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gcd</title>
-      <link>http://www.rogermolas.com/categories/gcd/</link>
+      <link>http://blog.rogermolas.com/categories/gcd/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/gcd/</guid>
+      <guid>http://blog.rogermolas.com/categories/gcd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mapkit</title>
-      <link>http://www.rogermolas.com/categories/mapkit/</link>
+      <link>http://blog.rogermolas.com/categories/mapkit/</link>
       <pubDate>Mon, 12 Feb 2018 14:29:02 +0800</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/mapkit/</guid>
+      <guid>http://blog.rogermolas.com/categories/mapkit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mkmapsnapshot</title>
-      <link>http://www.rogermolas.com/categories/mkmapsnapshot/</link>
+      <link>http://blog.rogermolas.com/categories/mkmapsnapshot/</link>
       <pubDate>Mon, 12 Feb 2018 14:29:02 +0800</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/mkmapsnapshot/</guid>
+      <guid>http://blog.rogermolas.com/categories/mkmapsnapshot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nsstringtransform</title>
-      <link>http://www.rogermolas.com/categories/nsstringtransform/</link>
+      <link>http://blog.rogermolas.com/categories/nsstringtransform/</link>
       <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/nsstringtransform/</guid>
+      <guid>http://blog.rogermolas.com/categories/nsstringtransform/</guid>
       <description></description>
     </item>
     
     <item>
       <title>String</title>
-      <link>http://www.rogermolas.com/categories/string/</link>
+      <link>http://blog.rogermolas.com/categories/string/</link>
       <pubDate>Sat, 01 Jul 2017 14:07:14 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/string/</guid>
+      <guid>http://blog.rogermolas.com/categories/string/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Strings</title>
-      <link>http://www.rogermolas.com/categories/strings/</link>
+      <link>http://blog.rogermolas.com/categories/strings/</link>
       <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/strings/</guid>
+      <guid>http://blog.rogermolas.com/categories/strings/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Swift3</title>
-      <link>http://www.rogermolas.com/categories/swift3/</link>
+      <link>http://blog.rogermolas.com/categories/swift3/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/swift3/</guid>
+      <guid>http://blog.rogermolas.com/categories/swift3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Swift4</title>
-      <link>http://www.rogermolas.com/categories/swift4/</link>
+      <link>http://blog.rogermolas.com/categories/swift4/</link>
       <pubDate>Sat, 01 Jul 2017 14:07:14 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/swift4/</guid>
+      <guid>http://blog.rogermolas.com/categories/swift4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Threading</title>
-      <link>http://www.rogermolas.com/categories/threading/</link>
+      <link>http://blog.rogermolas.com/categories/threading/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/threading/</guid>
+      <guid>http://blog.rogermolas.com/categories/threading/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Watchkit</title>
-      <link>http://www.rogermolas.com/categories/watchkit/</link>
+      <link>http://blog.rogermolas.com/categories/watchkit/</link>
       <pubDate>Wed, 13 May 2015 10:14:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/categories/watchkit/</guid>
+      <guid>http://blog.rogermolas.com/categories/watchkit/</guid>
       <description></description>
     </item>
     

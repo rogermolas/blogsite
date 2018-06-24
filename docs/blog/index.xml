@@ -2,52 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Roger Molas</title>
-    <link>http://www.rogermolas.com/blog/</link>
+    <link>http://blog.rogermolas.com/blog/</link>
     <description>Recent content in Blogs on Roger Molas</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
-    <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
+    <managingEditor>your@email.com (Roger Molas)</managingEditor>
+    <webMaster>your@email.com (Roger Molas)</webMaster>
+    <copyright>(c) 2017 - 2018 Roger Molas -- All rights reserved.</copyright>
     <lastBuildDate>Mon, 12 Feb 2018 14:29:02 +0800</lastBuildDate>
     
-	<atom:link href="http://www.rogermolas.com/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.rogermolas.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Generate MapView Snapshot with Snapshotter</title>
-      <link>http://www.rogermolas.com/blog/mapkit-generate-image-snapshotter/</link>
+      <link>http://blog.rogermolas.com/blog/mapkit-generate-image-snapshotter/</link>
       <pubDate>Mon, 12 Feb 2018 14:29:02 +0800</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/blog/mapkit-generate-image-snapshotter/</guid>
+      <author>your@email.com (Roger Molas)</author>
+      <guid>http://blog.rogermolas.com/blog/mapkit-generate-image-snapshotter/</guid>
       <description>MKMapSnapshotter is use in creating an image representation of a map view. Previously, other developers use UIGraphicsContext, but now images can reliably be created for any particular region and perspective.
 Creating a Map View Snapshot let mapSnapshotOptions = MKMapSnapshotOptions() mapSnapshotOptions.region = mapView.region mapSnapshotOptions.scale = UIScreen.main.scale mapSnapshotOptions.size = mapView.frame.size mapSnapshotOptions.showsBuildings = true mapSnapshotOptions.showsPointsOfInterest = true let snapShotter = MKMapSnapshotter(options: mapSnapshotOptions) snapShotter.start { (snap, error) in let image = snap?.image imageView.image = image }  According to Apple&amp;rsquo;s MKMapSnapshot doc</description>
     </item>
     
     <item>
       <title>Multiline String Literals</title>
-      <link>http://www.rogermolas.com/blog/multiline-string-literals/</link>
+      <link>http://blog.rogermolas.com/blog/multiline-string-literals/</link>
       <pubDate>Sat, 01 Jul 2017 14:07:14 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/blog/multiline-string-literals/</guid>
+      <author>your@email.com (Roger Molas)</author>
+      <guid>http://blog.rogermolas.com/blog/multiline-string-literals/</guid>
       <description>Long strings are strings delimited by &amp;quot;&amp;quot;&amp;quot;triple quotes&amp;quot;&amp;quot;&amp;quot; that can contain newlines and individual &amp;ldquo; characters without the need to escape them. SE-0168 Multi-Line String Literals
 Multi-Line String Literal Creation let lines = &amp;quot;&amp;quot;&amp;quot; This is line one This is line two This is line three &amp;quot;&amp;quot;&amp;quot; print(&amp;quot;Multi-Line String: \(lines)&amp;quot;)  Mutation let myString = &amp;quot;&amp;quot;&amp;quot; Hello Multi line string! This is sample of mutating string. End here &amp;quot;&amp;quot;&amp;quot; let startingIndex = myString.</description>
     </item>
     
     <item>
       <title>Grand Central Dispatch and Swift 3</title>
-      <link>http://www.rogermolas.com/blog/grand-central-dispatch-and-swift-3/</link>
+      <link>http://blog.rogermolas.com/blog/grand-central-dispatch-and-swift-3/</link>
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/blog/grand-central-dispatch-and-swift-3/</guid>
+      <author>your@email.com (Roger Molas)</author>
+      <guid>http://blog.rogermolas.com/blog/grand-central-dispatch-and-swift-3/</guid>
       <description>Grand Central Dispatch (GCD or libdispatch) a system level library for managing concurrent operations develop by Apple Inc., it is one of the more complicated and unfriendly APIs in iOS SDK. It was written in C programming language using this API felts like writing low-level C code that executed directly into hardware.
 GCD or libdispatch is a combination of logic in the xnu kernel alongside the user-space library. The kernel has the most information available to balance workload across the entire system.</description>
     </item>
     
     <item>
       <title>New iOS9 String Transformations API</title>
-      <link>http://www.rogermolas.com/blog/new-ios9-string-transformations-api/</link>
+      <link>http://blog.rogermolas.com/blog/new-ios9-string-transformations-api/</link>
       <pubDate>Mon, 29 Jun 2015 09:44:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/blog/new-ios9-string-transformations-api/</guid>
+      <author>your@email.com (Roger Molas)</author>
+      <guid>http://blog.rogermolas.com/blog/new-ios9-string-transformations-api/</guid>
       <description>String transformations formerly done using CFStringTransform a part of Core Foundation Framework. In iOS 9 string transformation can be done along with the new “NSStringTransform*” constants a native Cocoa API and no need to deal with bridging to CFStringRef.
 Here are some of my favorite transformations that can be done with the new NSStringTransform* API.
 print(&amp;quot;roger&amp;quot;.stringByApplyingTransform(NSStringTransformLatinToGreek, reverse: false)!) //ῤογερ print(&amp;quot;roger&amp;quot;.stringByApplyingTransform(NSStringTransformLatinToHangul, reverse: false)!) //로겔 print(&amp;quot;\uD83D\uDC2E&amp;quot;.stringByApplyingTransform(NSStringTransformToUnicodeName, reverse: false)!) //{COW FACE}  </description>
@@ -55,10 +56,10 @@ print(&amp;quot;roger&amp;quot;.stringByApplyingTransform(NSStringTransformLatin
     
     <item>
       <title>WatchKit Framework</title>
-      <link>http://www.rogermolas.com/blog/watchkit-framework/</link>
+      <link>http://blog.rogermolas.com/blog/watchkit-framework/</link>
       <pubDate>Wed, 13 May 2015 10:14:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/blog/watchkit-framework/</guid>
+      <author>your@email.com (Roger Molas)</author>
+      <guid>http://blog.rogermolas.com/blog/watchkit-framework/</guid>
       <description>WatchKit is the new framework created by Apple for Apple Watch development, WatchKit is available starting Xcode 6.2 and iOS 8.2.
 Analogous to UIKit for iOS apps, the framework allows developers to drop in custom interfaces and interact with your existing iOS app.
 When app is launched on Apple Watch, the WatchKit extension on iPhone runs in the background to update the user interface and respond to user interactions.</description>
@@ -66,10 +67,10 @@ When app is launched on Apple Watch, the WatchKit extension on iPhone runs in th
     
     <item>
       <title>iOS Dependency Management</title>
-      <link>http://www.rogermolas.com/blog/ios-dependency-management/</link>
+      <link>http://blog.rogermolas.com/blog/ios-dependency-management/</link>
       <pubDate>Fri, 10 Apr 2015 06:00:00 +0000</pubDate>
-      <author>contact@rogermolas.com (Roger Molas)</author>
-      <guid>http://www.rogermolas.com/blog/ios-dependency-management/</guid>
+      <author>your@email.com (Roger Molas)</author>
+      <guid>http://blog.rogermolas.com/blog/ios-dependency-management/</guid>
       <description>As an iOS developer, you certainly use a third-party libraries or a source code made by others to extend your app’s abilities. At first, it seems easy, just drag and drop some source code or libraries in your Xcode project or drag and drop an entire subproject into the parent project and you are done.
 Just imagine how difficult it would be if you had to implement everything from scratch!</description>
     </item>

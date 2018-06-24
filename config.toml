@@ -1,72 +1,22 @@
-baseurl = "http://www.rogermolas.com"
-DefaultContentLanguage = "en"
-publishDir = "docs"
+baseurl = "http://blog.rogermolas.com"
 title = "Roger Molas"
-theme = "beautifulhugo"
-metaDataFormat = "yaml"
+theme = "temple"
+publishDir = "docs"
+copyright = "(c) 2017 - 2018 Roger Molas -- All rights reserved."
 
-pygmentsCodeFences = true
-pygmentsUseClasses = true
 [params]
-    useChroma = true
+  # Enables syntax highlighting
+  highlight = true 
+  hjslangs = ["go", "vim", "swift", "objc-C", "ruby", "python"]
+  topmenu = "PROJECTS"
+
+# Builds a list page for each category given
 [taxonomies]
-   tag = "tags"
-   category = "categories"
-#disqusShortname = "XXX"
-#googleAnalytics = "XXX"
+  tag = "PROJECTS"
+  category = "categories"
 
-[Params]
-  title = "Roger Molas"
-  subtitle = "Welcome to my site and this is the place where i collect my thoughts, works and findings to share with the public. "
-  logo = "img/profile.jpg"
-  favicon = "img/favicon.ico"
-  dateFormat = "January 2, 2006"
-  commit = false
-  rss = false
-  comments = true
-
-[Author]
+[author]
   name = "Roger Molas"
-  email = "contact@rogermolas.com"
   github = "rogermolas"
+  email = "contact@rogermolas.com"
   twitter = "roger_molas"
-  linkedin = "rogermolas"
-  stackoverflow = "/users/592526/roger"
-
-[[menu.main]]
-    identifier = "ABOUT"
-    name = "ABOUT"
-    url = "about/"
-    weight = 3
-
-[[menu.main]]
-    identifier = "PROJECTS"
-    name = "PROJECTS"
-    url = "projects/"
-    weight = 2
-
-[[menu.main]]
-    parent = "ABOUT"
-    name = "ME"
-    url = "about/"
-    weight = 1
-
-#[[menu.main]]
-#    parent = "ABOUT"
-#    name = "TERMS OF SERVICE"
-#    url = "policies/terms/"
-#    weight = 2
-
-[[menu.main]]
-    parent = "ABOUT"
-    name = "PRIVACY POLICY"
-    url = "policies/privacy/"
-    weight = 3
-
-
-[[menu.main]]
-    name = "BLOG"
-    url = "blog/"
-    weight = 1
-
-
