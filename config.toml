@@ -7,7 +7,7 @@ copyright = "(c) 2017 - 2018 Roger Molas -- All rights reserved."
 [params]
   # Enables syntax highlighting
   highlight = true 
-  hjslangs = ["go", "vim", "swift","ruby", "python"]
+  hjslangs = ["swift","ruby", "python"]
   topmenu = "PROJECTS"
  
 # Builds a list page for each category given
