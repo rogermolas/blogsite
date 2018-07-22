@@ -9,9 +9,9 @@ Started programming at high school with BASIC and C, from there i got engaged wi
 
 2012 from the province I moved to central business district to continue  exploring, growing and learning things.
 #### StackOverFlow Developer [Story](https://stackoverflow.com/story/rogermolas)
-#### [Learn more ...](http://www.rogermolas.com)
+#### [Learn more ...](http://rogermolas.com/about.html)
 
-#### WHEN NOT CODING
+#### WHEN NOT CODINGs
 
 Marathoner, fitness brings a lot of benefits and running is the best option when it comes to losing weight, feel good, look good, new friends and community.
 

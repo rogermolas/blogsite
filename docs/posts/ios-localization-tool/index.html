@@ -3,8 +3,8 @@
 <head>
   
   <meta charset="utf-8">
-  <title>About</title>
-  <meta name="description" content="About">
+  <title>iOS Localization Tool</title>
+  <meta name="description" content="iOS Localization Tool">
   <meta name="author" content="Roger Molas">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -381,47 +381,95 @@ body {
 
       <div class="post-title">
         <p class="footnote">
-        <time class="">01-01-0001</time>
+        <time class="">07-22-2018</time>
         
         
+        |
+        
+        
+        tags: [ <a href="http://blog.rogermolas.com/tags/ios">iOS</a> <a href="http://blog.rogermolas.com/tags/localization">localization</a> <a href="http://blog.rogermolas.com/tags/tools">tools</a> <a href="http://blog.rogermolas.com/tags/python">python</a> ]
         
 
+        
+        categories: [<a href="http://blog.rogermolas.com/categories/ios">iOS</a> <a href="http://blog.rogermolas.com/categories/localization">Localization</a> ]
         
 
         
         </p>
-        <h1>About</h1>
+        <h1>iOS Localization Tool</h1>
       </div>
 
       <div class="post-content">
         
 
-<p>My name is Roger Molas. I&rsquo;m a Freelance <a href="https://github.com/rogermolas"> iOS Developer</a>. This<strong> blog, its content, thoughts and opinions are my own.</strong> I blog about technology, code, iOS development, Swift, Objective C and anything related to that. I&rsquo;m excited about, innovation, community, social equity, stocks and entrepreneurship.</p>
+<p>Localization is simply the process of translating your app into multiple languages.</p>
 
-<p>Started programming at high school with BASIC and C, from there i got engaged with programming and explore everything related to bit and bytes. I started iOS development with Objective-C in 2010, published 4 applications on the app store <a href="http://infotechcreations.blogspot.com/p/apps.html"> the old blog</a>.</p>
+<p>In situation like you need support multiple language, including API response messages and dynamic strings you need a list of localizable .strings file, and you need to localized it based on the Language you want  ( e.g <strong><em>English</em></strong>, <strong><em>Chinese</em></strong>, <strong><em>Japanese</em></strong> ).</p>
 
-<p>2012 from the province I moved to central business district to continue  exploring, growing and learning things.</p>
+<p>Xcode has a <strong>built-in</strong> localizable file generator that generate your localizable .strings for each language you supported.</p>
 
-<h4 id="stackoverflow-developer-story-https-stackoverflow-com-story-rogermolas">StackOverFlow Developer <a href="https://stackoverflow.com/story/rogermolas">Story</a></h4>
+<p>In this format</p>
 
-<h4 id="learn-more-http-rogermolas-com-about-html"><a href="http://rogermolas.com/about.html">Learn more &hellip;</a></h4>
+<pre><code>en.lproj  // directory
+   |- localizable.strings
 
-<h4 id="when-not-codings">WHEN NOT CODINGs</h4>
+zh.lproj  // directory
+   |- localizable.strings
 
-<p>Marathoner, fitness brings a lot of benefits and running is the best option when it comes to losing weight, feel good, look good, new friends and community.</p>
+ja.lproj  // directory
+   |- localizable.strings
+</code></pre>
 
-<p>Im doing magic, yeah MAGICIAN, due to my endless curiosity i just want to know the mystery behind magic thats why i study Magic. i become MAGICIAN … cool!!</p>
+<p>Thats Cool!!</p>
 
-<p>I don’t sleep too much, i love reading books from this authors (Tony Robbins, Steph Covey, Robert Kiyosaki, Napoleon Hill); financial, motivational, phycological, leadership, and business.</p>
+<p><strong><em>But how about the contents?</em></strong></p>
 
-<p>I support UNHCR i give something to bring back hope for vulnerable families and communities.
-If you want to help, share your blessings <a href="https://donate.unhcr.ph/sharehope/">here</a></p>
+<p>You need to copy and paste it base on it corresponding laguage. For Chinese stings you put it on <strong>zh.lproj/ localizable.strings</strong> and  for Japanese stings put it on <strong>ja.lproj/ localizable.strings</strong> and your good to go.</p>
 
-<p>That’s me, today. I’ll be different tomorrow, and getting better and better each day.</p>
+<p><strong><em>Holy Shiiit, i have 400 stings that needs to be localized in 3 or more languages</em></strong> 400 x  3 = 1,200</p>
 
-<h2 id="contact">Contact</h2>
+<p>Just copy and paste your 1,200 lines of string, Good Luck!
+s</p>
 
-<p>Im at <a href="https://twitter.com/roger_molas">Twitter</a>, <a href="https://ph.linkedin.com/in/rogermolas">LinkedIn</a>, if you want to contact me go ahead send me an <a href="mailto:contact@rogermolas.com">email</a> :)</p>
+<h3 id="to-solve-the-pain-of-copy-and-pasting-and-save-time">To solve the pain of copy and pasting and save time.</h3>
+
+<p>you can use the tool called <a href="https://github.com/rogermolas/csv-localizer"><strong>csv-localizer</strong></a> <a href="https://github.com/rogermolas/csv-localizer"><img src="https://img.shields.io/github/stars/badges/shields.svg?style=social&amp;label=Stars" alt="GitHub stars" /></a> available on Github.</p>
+
+<p>Just instruct you translator or someone working on translations to put all translated strings into CSV file based on the format provided.</p>
+
+<p><strong>csv-localizer</strong> can be installed from homebrew via</p>
+
+<pre><code class="language-bash">$ brew tap rogermolas/csv-localizer
+$ brew install csv-localizer
+</code></pre>
+
+<p>Convert using the following command</p>
+
+<pre><code class="language-bash">$ csv-localizer -p ios -i path/csv_files/ -o path/output
+</code></pre>
+
+<blockquote>
+<p><em>Input directory, CSV files directory path, should not include the .csv file</em>
+<em>&ldquo;path/csv_files/</em>&rdquo; <strong>and not</strong> &ldquo;<em><del>path/csv_files/strings.csv</del></em>&ldquo;</p>
+
+<p><strong>The reason for that is, csv-localizer can process multiple csv files, thats why its only accept  a directory path.</strong></p>
+</blockquote>
+
+<p>Generated files</p>
+
+<pre><code>en.lproj  // directory
+   |- localizable.strings
+
+zh.lproj  // directory
+   |- localizable.strings
+
+ja.lproj  // directory
+   |- localizable.strings
+</code></pre>
+
+<p>Thats it,  your ready to go. Easy Right?</p>
+
+<p>It will generate the same format just like what Xcode did, but this time it has its localized contents in each corresponding laguage. :)</p>
 
       </div>
     </div>
