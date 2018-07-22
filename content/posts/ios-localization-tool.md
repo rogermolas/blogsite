@@ -33,7 +33,7 @@ You need to copy and paste it base on it corresponding laguage. For Chinese stin
 ***Holy Shiiit, i have 400 stings that needs to be localized in 3 or more languages*** 400 x  3 = 1,200
 
 Just copy and paste your 1,200 lines of string, Good Luck!
-s
+
 ### To solve the pain of copy and pasting and save time.
 
 you can use the tool called [**csv-localizer**](https://github.com/rogermolas/csv-localizer) [![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)](https://github.com/rogermolas/csv-localizer) available on Github.
