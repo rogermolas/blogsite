@@ -72,3 +72,5 @@ ja.lproj  // directory
 Thats it,  your ready to go. Easy Right?
 
 It will generate the same format just like what Xcode did, but this time it has its localized contents in each corresponding laguage. :)
+
+Don't forget give a  [![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)](https://github.com/rogermolas/csv-localizer)
