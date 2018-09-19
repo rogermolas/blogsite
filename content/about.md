@@ -9,6 +9,7 @@ Started programming at high school with BASIC and C, from there i got engaged wi
 
 2012 from the province I moved to central business district to continue  exploring, growing and learning things.
 #### StackOverFlow Developer [Story](https://stackoverflow.com/story/rogermolas)
+#### This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. [(CC BY-SA 4.0)](http://creativecommons.org/licenses/by-sa/4.0/)
 #### [Learn more ...](http://rogermolas.com/about.html)
 
 #### WHEN NOT CODINGs

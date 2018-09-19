@@ -2,7 +2,7 @@ baseurl = "http://blog.rogermolas.com/"
 title = "Roger Molas"
 theme = "temple"
 publishDir = "docs"
-copyright = "(c) 2017 - 2018 Roger Molas -- All rights reserved."
+copyright = "(c) Roger Molas (CC BY-SA 4.0)"
 
 [params]
   # Enables syntax highlighting
