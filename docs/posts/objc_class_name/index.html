@@ -3,8 +3,8 @@
 <head>
   
   <meta charset="utf-8">
-  <title>Access class Name using @objc attribute</title>
-  <meta name="description" content="Access class Name using @objc attribute">
+  <title>Access class name using @objc attribute</title>
+  <meta name="description" content="Access class name using @objc attribute">
   <meta name="author" content="Roger Molas">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -457,7 +457,7 @@ code, kbd, pre, samp {
 
         
         </p>
-        <h1>Access class Name using @objc attribute</h1>
+        <h1>Access class name using @objc attribute</h1>
       </div>
 
       <div class="post-content">
@@ -470,7 +470,7 @@ code, kbd, pre, samp {
 <li>Use common cell loading techniques</li>
 <li>Use helpher method to load cell using @objc attribute</li>
 </ul>
-<p><strong>Create UITableViewCell classes</strong></p>
+<p><strong>Create UITableViewCell subclass</strong></p>
 <pre><code>class HeaderCell: UITableViewCell {
     ...
 }
@@ -496,7 +496,73 @@ code, kbd, pre, samp {
     }
     return UITableViewCell()
 }
-</code></pre>
+</code></pre><p>So whats <strong>@objc</strong> attribute?
+When you apply it to a class or method it instructs Swift to make those things available to Objective-C as well as Swift code.</p>
+<p>Most of time you see <code>@objc</code> when you call a method from a UIBarButtonItem or UIButton, you’ll need to mark that method using <code>@objc</code> so it’s exposed – both of those, and many others, are Objective-C code.</p>
+<p>In this case we will use <code>@objc</code> the name our class <code>HeaderCell</code>, <code>ContentsCell</code>, and <code>AboutCell</code> in Swift</p>
+<p><strong>Update our UITableViewCell subclass</strong></p>
+<pre><code>@objc(HeaderCell)
+class HeaderCell: UITableViewCell {
+    ...
+}
+</code></pre><pre><code>@objc(ContentsCell)
+class ContentsCell: UITableViewCell {
+    ...
+}
+</code></pre><pre><code>@objc(AboutCell)
+class AboutCell: UITableViewCell {
+    ...
+}
+</code></pre><p>Create Helpher method to take cell intentifier using AnyClass type from UITableViewCell subclass.</p>
+<p><strong>Note:Cell intentifier should be the class name</strong></p>
+<pre><code>func getCell(_ cls: AnyClass, _ index: IndexPath) -&gt; AnyObject {
+    let identifier = NSStringFromClass(cls)
+    let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: index)
+    return cell
+}
+</code></pre><p><strong>Load cell in Tableview using new way</strong></p>
+<pre><code>func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+    if indexPath.row == 0 {
+        let cell = getCell(HeaderCell.self, indexPath) as! HeaderCell
+        return cell
+    }
+    if indexPath.row == 2 {
+        let cell = getCell(ContentsCell.self, indexPath) as! ContentsCell
+        return cell
+    }
+    if indexPath.row == 1 {
+        let cell = getCell(AboutCell.self, indexPath) as! AboutCell
+        return cell
+    }
+    return UITableViewCell()
+}
+</code></pre><p>Looks clean right?, so <code>@objc</code> attribute is not just for methods, we use it to name our class as well.</p>
+<p><strong>Addition Tricks</strong></p>
+<p>Lets make it more shorter, create enum of rows called <code>Row</code></p>
+<pre><code>enum Row:Int {
+    case HeaderCell = 0
+    case ContentsCell = 1
+    case AboutCell  = 2
+    
+    var className: AnyClass {
+        switch self {
+            case .Header:
+                return HeaderCell.self
+            case .Contents:
+                return ContentsCell.self
+            case .About:
+                return AboutCell.self
+        }
+    }
+}
+</code></pre><pre><code>func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+    let row = Row(rawValue: indexPath.row)
+    let cell = getCell(row.className, indexPath) // dynamic biding
+    return cell
+}
+</code></pre><p>Thats it!
+Thanks for your time</p>
+
       </div>
     </div>
   </div>

@@ -14,13 +14,13 @@
     
     
     <item>
-      <title>Access class Name using @objc attribute</title>
+      <title>Access class name using @objc attribute</title>
       <link>http://blog.rogermolas.com/posts/objc_class_name/</link>
       <pubDate>Thu, 19 Mar 2020 17:21:30 +0800</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
       <guid>http://blog.rogermolas.com/posts/objc_class_name/</guid>
       <description>Scenario
- Create Simple Table View app Load customs cells each row Cell identifier is class name, if object is TableCell cell identifier is &amp;ldquo;TableCell&amp;rdquo; Use common cell loading techniques Use helpher method to load cell using @objc attribute  Create UITableViewCell classes
+ Create Simple Table View app Load customs cells each row Cell identifier is class name, if object is TableCell cell identifier is &amp;ldquo;TableCell&amp;rdquo; Use common cell loading techniques Use helpher method to load cell using @objc attribute  Create UITableViewCell subclass
 class HeaderCell: UITableViewCell { ... } class ContentsCell: UITableViewCell { ... } class AboutCell: UITableViewCell { ... } Load cell in Tableview in traditional way
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&amp;gt; UITableViewCell { if indexPath.</description>
     </item>
@@ -105,7 +105,7 @@ Just imagine how difficult it would be if you had to implement everything from s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
       <guid>http://blog.rogermolas.com/about/</guid>
-      <description>My name is Roger Molas. I&amp;rsquo;m a Freelance iOS Developer. This** blog, its content, thoughts and opinions are my own.** I blog about technology, code, iOS development, Swift, Objective C and anything related to that. I&amp;rsquo;m excited about, innovation, community, social equity, stocks and entrepreneurship.
+      <description>My name is Roger Molas. This blog, its content, thoughts and opinions are my own. I blog about technology, code, iOS development, Swift, Objective C and anything related to that. I&amp;rsquo;m excited about, innovation, codes, data science, community, social equity, stocks and entrepreneurship.
 Started programming at high school with BASIC and C, from there i got engaged with programming and explore everything related to bit and bytes. I started iOS development with Objective-C in 2010, published 4 applications on the app store the old blog.</description>
     </item>
     
