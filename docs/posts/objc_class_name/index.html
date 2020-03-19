@@ -499,7 +499,7 @@ code, kbd, pre, samp {
 </code></pre><p>So whats <strong>@objc</strong> attribute?
 When you apply it to a class or method it instructs Swift to make those things available to Objective-C as well as Swift code.</p>
 <p>Most of time you see <code>@objc</code> when you call a method from a UIBarButtonItem or UIButton, you’ll need to mark that method using <code>@objc</code> so it’s exposed – both of those, and many others, are Objective-C code.</p>
-<p>In this case we will use <code>@objc</code> the name our class <code>HeaderCell</code>, <code>ContentsCell</code>, and <code>AboutCell</code> in Swift</p>
+<p>In this case we will use <code>@objc</code> to name our subclasses <code>HeaderCell</code>, <code>ContentsCell</code>, and <code>AboutCell</code> in Swift</p>
 <p><strong>Update our UITableViewCell subclass</strong></p>
 <pre><code>@objc(HeaderCell)
 class HeaderCell: UITableViewCell {

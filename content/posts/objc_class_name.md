@@ -58,7 +58,7 @@ When you apply it to a class or method it instructs Swift to make those things a
 
 Most of time you see `@objc` when you call a method from a UIBarButtonItem or UIButton, you’ll need to mark that method using `@objc` so it’s exposed – both of those, and many others, are Objective-C code.
 
-In this case we will use `@objc` the name our class `HeaderCell`, `ContentsCell`, and `AboutCell` in Swift
+In this case we will use `@objc` to name our subclasses `HeaderCell`, `ContentsCell`, and `AboutCell` in Swift
 
 **Update our UITableViewCell subclass**
 ```
