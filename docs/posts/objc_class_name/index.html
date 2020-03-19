@@ -464,11 +464,11 @@ code, kbd, pre, samp {
         
         <p><strong>Scenario</strong></p>
 <ul>
-<li>Create Simple Table View app</li>
+<li>Create a Simple Table View app</li>
 <li>Load customs cells each row</li>
-<li>Cell identifier is class name, if object is TableCell cell identifier is &ldquo;TableCell&rdquo;</li>
+<li>Cell identifier is the class name if the object is TableCell cell identifier is &ldquo;TableCell&rdquo;</li>
 <li>Use common cell loading techniques</li>
-<li>Use helpher method to load cell using @objc attribute</li>
+<li>Use helper method to load cell using @objc attribute</li>
 </ul>
 <p><strong>Create UITableViewCell subclass</strong></p>
 <pre><code>class HeaderCell: UITableViewCell {
@@ -498,8 +498,8 @@ code, kbd, pre, samp {
 }
 </code></pre><p>So whats <strong>@objc</strong> attribute?
 When you apply it to a class or method it instructs Swift to make those things available to Objective-C as well as Swift code.</p>
-<p>Most of time you see <code>@objc</code> when you call a method from a UIBarButtonItem or UIButton, you’ll need to mark that method using <code>@objc</code> so it’s exposed – both of those, and many others, are Objective-C code.</p>
-<p>In this case we will use <code>@objc</code> to name our subclasses <code>HeaderCell</code>, <code>ContentsCell</code>, and <code>AboutCell</code> in Swift</p>
+<p>Most of the time you see <code>@objc</code> when you call a method from a UIBarButtonItem or UIButton, you’ll need to mark that method using <code>@objc</code> so it’s exposed – both of those, and many others, are Objective-C code.</p>
+<p>In this case, we will use <code>@objc</code> to name our subclasses <code>HeaderCell</code>, <code>ContentsCell</code>, and <code>AboutCell</code> in Swift</p>
 <p><strong>Update our UITableViewCell subclass</strong></p>
 <pre><code>@objc(HeaderCell)
 class HeaderCell: UITableViewCell {
@@ -513,8 +513,8 @@ class ContentsCell: UITableViewCell {
 class AboutCell: UITableViewCell {
     ...
 }
-</code></pre><p>Create Helpher method to take cell intentifier using AnyClass type from UITableViewCell subclass.</p>
-<p><strong>Note:Cell intentifier should be the class name</strong></p>
+</code></pre><p>Create a Helper method to take the cell identifier using the AnyClass type from the UITableViewCell subclass.</p>
+<p><strong>Note: Cell identifier should be the class name</strong></p>
 <pre><code>func getCell(_ cls: AnyClass, _ index: IndexPath) -&gt; AnyObject {
     let identifier = NSStringFromClass(cls)
     let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: index)
@@ -538,8 +538,8 @@ class AboutCell: UITableViewCell {
 }
 </code></pre><p>Looks clean right?, so <code>@objc</code> attribute is not just for methods, we use it to name our class as well.</p>
 <p><strong>Addition Tricks</strong></p>
-<p>Lets make it more shorter, create enum of rows called <code>Row</code></p>
-<pre><code>enum Row:Int {
+<p>Let&rsquo;s make it shorter, create an enum of rows called <code>Row</code></p>
+<pre><code>enum Row: Int {
     case HeaderCell = 0
     case ContentsCell = 1
     case AboutCell  = 2

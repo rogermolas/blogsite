@@ -1,7 +1,7 @@
 ---
 title: "Access class name using @objc attribute"
 date: 2020-03-19T17:21:30+08:00
-draft: faslse
+draft: false
 categories: [Swift, Objective C,UITableView, UITableViewCell]
 tags: [iOS, Swift, Objective C, UITableView, UITableViewCell]
 author: rogermolas
@@ -9,11 +9,11 @@ author: rogermolas
 
 
 **Scenario**
-* Create Simple Table View app
+* Create a Simple Table View app
 * Load customs cells each row
-* Cell identifier is class name, if object is TableCell cell identifier is "TableCell"
+* Cell identifier is the class name if the object is TableCell cell identifier is "TableCell"
 * Use common cell loading techniques
-* Use helpher method to load cell using @objc attribute
+* Use helper method to load cell using @objc attribute
 
 **Create UITableViewCell subclass**
 ```
@@ -56,9 +56,9 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 So whats **@objc** attribute?
 When you apply it to a class or method it instructs Swift to make those things available to Objective-C as well as Swift code.
 
-Most of time you see `@objc` when you call a method from a UIBarButtonItem or UIButton, you’ll need to mark that method using `@objc` so it’s exposed – both of those, and many others, are Objective-C code.
+Most of the time you see `@objc` when you call a method from a UIBarButtonItem or UIButton, you’ll need to mark that method using `@objc` so it’s exposed – both of those, and many others, are Objective-C code.
 
-In this case we will use `@objc` to name our subclasses `HeaderCell`, `ContentsCell`, and `AboutCell` in Swift
+In this case, we will use `@objc` to name our subclasses `HeaderCell`, `ContentsCell`, and `AboutCell` in Swift
 
 **Update our UITableViewCell subclass**
 ```
@@ -80,9 +80,9 @@ class AboutCell: UITableViewCell {
 }
 ```
 
-Create Helpher method to take cell intentifier using AnyClass type from UITableViewCell subclass.
+Create a Helper method to take the cell identifier using the AnyClass type from the UITableViewCell subclass.
 
-**Note:Cell intentifier should be the class name**
+**Note: Cell identifier should be the class name**
 
 ```
 func getCell(_ cls: AnyClass, _ index: IndexPath) -> AnyObject {
@@ -114,10 +114,10 @@ Looks clean right?, so `@objc` attribute is not just for methods, we use it to n
 
 **Addition Tricks**
 
-Lets make it more shorter, create enum of rows called `Row`
+Let's make it shorter, create an enum of rows called `Row`
 
 ```
-enum Row:Int {
+enum Row: Int {
     case HeaderCell = 0
     case ContentsCell = 1
     case AboutCell  = 2

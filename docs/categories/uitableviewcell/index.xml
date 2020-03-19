@@ -20,9 +20,8 @@
       <author>contact@rogermolas.com (Roger Molas)</author>
       <guid>http://blog.rogermolas.com/posts/objc_class_name/</guid>
       <description>Scenario
- Create Simple Table View app Load customs cells each row Cell identifier is class name, if object is TableCell cell identifier is &amp;ldquo;TableCell&amp;rdquo; Use common cell loading techniques Use helpher method to load cell using @objc attribute  Create UITableViewCell subclass
-class HeaderCell: UITableViewCell { ... } class ContentsCell: UITableViewCell { ... } class AboutCell: UITableViewCell { ... } Load cell in Tableview in traditional way
-func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&amp;gt; UITableViewCell { if indexPath.</description>
+ Create a Simple Table View app Load customs cells each row Cell identifier is the class name if the object is TableCell cell identifier is &amp;ldquo;TableCell&amp;rdquo; Use common cell loading techniques Use helper method to load cell using @objc attribute  Create UITableViewCell subclass
+class HeaderCell: UITableViewCell { ... } class ContentsCell: UITableViewCell { ... } class AboutCell: UITableViewCell { ... } Load cell in Tableview in traditional way</description>
     </item>
     
   </channel>
