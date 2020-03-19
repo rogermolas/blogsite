@@ -3,8 +3,8 @@
 <head>
   
   <meta charset="utf-8">
-  <title>Generate MapView Snapshot with Snapshotter</title>
-  <meta name="description" content="Generate MapView Snapshot with Snapshotter">
+  <title>Access class Name using @objc attribute</title>
+  <meta name="description" content="Access class Name using @objc attribute">
   <meta name="author" content="Roger Molas">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -438,9 +438,9 @@ code, kbd, pre, samp {
 
       <div class="post-title">
         <p class="footnote">
-          <time datetime="2018-02-12 14:29:02 &#43;0800 PST">
+          <time datetime="2020-03-19 17:21:30 &#43;0800 PST">
             
-              02-12-2018
+              03-19-2020
             
           </time>
         
@@ -448,63 +448,55 @@ code, kbd, pre, samp {
         |
         
         
-        tags: [ <a href="http://blog.rogermolas.com/tags/mkmapsnapshot">MKMapSnapshot</a> <a href="http://blog.rogermolas.com/tags/mapkit">MapKit</a> <a href="http://blog.rogermolas.com/tags/swift4">Swift4</a> ]
+        tags: [ <a href="http://blog.rogermolas.com/tags/ios">iOS</a> <a href="http://blog.rogermolas.com/tags/swift">Swift</a> <a href="http://blog.rogermolas.com/tags/objective-c">Objective C</a> <a href="http://blog.rogermolas.com/tags/uitableview">UITableView</a> <a href="http://blog.rogermolas.com/tags/uitableviewcell">UITableViewCell</a> ]
         
 
         
-        categories: [ <a href="http://blog.rogermolas.com/categories/mkmapsnapshot">MKMapSnapshot</a> <a href="http://blog.rogermolas.com/categories/mapkit">MapKit</a> ]
+        categories: [ <a href="http://blog.rogermolas.com/categories/swift">Swift</a> <a href="http://blog.rogermolas.com/categories/objective-c">Objective C</a> <a href="http://blog.rogermolas.com/categories/uitableview">UITableView</a> <a href="http://blog.rogermolas.com/categories/uitableviewcell">UITableViewCell</a> ]
         
 
         
         </p>
-        <h1>Generate MapView Snapshot with Snapshotter</h1>
+        <h1>Access class Name using @objc attribute</h1>
       </div>
 
       <div class="post-content">
         
-        <p><a href="https://developer.apple.com/documentation/mapkit/mkmapsnapshot"><code>MKMapSnapshotter</code></a> is use in creating an image representation of a map view. Previously, other developers use <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CocoaDrawingGuide/GraphicsContexts/GraphicsContexts.html"><code>UIGraphicsContext</code></a>, but now images can reliably be created for any particular region and perspective.</p>
-<h3 id="creating-a-map-view-snapshot">Creating a Map View Snapshot</h3>
-<pre><code>let mapSnapshotOptions = MKMapSnapshotOptions()
-mapSnapshotOptions.region = mapView.region
-mapSnapshotOptions.scale = UIScreen.main.scale
-mapSnapshotOptions.size = mapView.frame.size
-mapSnapshotOptions.showsBuildings = true
-mapSnapshotOptions.showsPointsOfInterest = true
-
-let snapShotter = MKMapSnapshotter(options: mapSnapshotOptions)
-snapShotter.start { (snap, error) in
-    let image = snap?.image
-    imageView.image = image
+        <p><strong>Scenario</strong></p>
+<ul>
+<li>Create Simple Table View app</li>
+<li>Load customs cells each row</li>
+<li>Cell identifier is class name, if object is TableCell cell identifier is &ldquo;TableCell&rdquo;</li>
+<li>Use common cell loading techniques</li>
+<li>Use helpher method to load cell using @objc attribute</li>
+</ul>
+<p><strong>Create UITableViewCell classes</strong></p>
+<pre><code>class HeaderCell: UITableViewCell {
+    ...
 }
-</code></pre><p>According to Apple&rsquo;s <a href="https://developer.apple.com/documentation/mapkit/mkmapsnapshot">MKMapSnapshot</a> doc</p>
-<blockquote>
-<p>Snapshot images do not include any custom overlays or annotations that your app added to the map view. If you want your annotations and overlays to appear on the final image, you must draw them yourself.</p>
-</blockquote>
-<h3 id="draw-stroke-color-in-image">Draw Stroke Color In Image</h3>
-<pre><code>let image = snap?.image
-UIGraphicsBeginImageContextWithOptions((image?.size)!, true, (image?.scale)!)
-image?.draw(at: CGPoint(x: 0, y: 0))
-
-let context = UIGraphicsGetCurrentContext()
-context!.setStrokeColor(UIColor.blue.cgColor)
-context!.setLineWidth(2.0)
-context!.beginPath()
-
-for (index, location) in locations.enumerated() {
-    let coordinates = CLLocationCoordinate2DMake(location.latitude, location.longitude)
-    let point = snap?.point(for: coordinates)
-    if index == 0 {
-        context?.move(to: point!)
-    } else {
-        context?.addLine(to:point!)
+</code></pre><pre><code>class ContentsCell: UITableViewCell {
+    ...
+}
+</code></pre><pre><code>class AboutCell: UITableViewCell {
+    ...
+}
+</code></pre><p><strong>Load cell in Tableview in traditional way</strong></p>
+<pre><code>func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+    if indexPath.row == 0 {
+        let cell = tableView.dequeueReusableCell(withIdentifier: &quot;HeaderCell&quot;, for: indexPath) as? HeaderCell
+        return cell
     }
+    if indexPath.row == 2 {
+        let cell = tableView.dequeueReusableCell(withIdentifier: &quot;ContentsCell&quot;, for: indexPath) as? ContentsCell
+        return cell
+    }
+    if indexPath.row == 1 {
+        let cell = tableView.dequeueReusableCell(withIdentifier: &quot;AboutCell&quot;, for: indexPath) as? AboutCell
+        return cell
+    }
+    return UITableViewCell()
 }
-context?.strokePath()
-let finalImage = UIGraphicsGetImageFromCurrentImageContext()
-UIGraphicsEndImageContext()
-imageView.image = finalImage
-</code></pre><p>The stroke color are rendered separately. By using <code>point(for:)</code>  it converts the specified map coordinate to a point in the coordinate space of the map image.</p>
-
+</code></pre>
       </div>
     </div>
   </div>

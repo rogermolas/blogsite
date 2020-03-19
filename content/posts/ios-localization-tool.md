@@ -3,7 +3,7 @@ title: "iOS Localization Tool"
 date: 2018-07-22T13:39:13+08:00
 draft: false
 categories: [iOS, Localization]
-tags: [iOS, localization, tools, python]
+tags: [iOS, localization, tools, python, Swift]
 author: rogermolas
 ---
 
@@ -42,14 +42,14 @@ Just instruct you translator or someone working on translations to put all trans
 
 **csv-localizer** can be installed from homebrew via
 
-```bash
+```
 $ brew tap rogermolas/csv-localizer
 $ brew install csv-localizer
 ```
 
 Convert using the following command
 
-```bash
+```
 $ csv-localizer -p ios -i path/csv_files/ -o path/output
 ```
 >*Input directory, CSV files directory path, should not include the .csv file*

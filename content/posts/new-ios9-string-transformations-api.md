@@ -3,7 +3,7 @@ title: "New iOS9 String Transformations API"
 date: 2015-06-29 09:44:00+00:00
 draft: false
 categories: [Strings, NSStringTransform]
-tags: [iOS,CFString]
+tags: [iOS,CFString, Swift]
 author: rogermolas
 ---
 

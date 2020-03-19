@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Swift on Roger Molas - iOS Tricks and Findings</title>
+    <link>http://blog.rogermolas.com/categories/swift/</link>
+    <description>Recent content in Swift on Roger Molas - iOS Tricks and Findings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
+    <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
+    <copyright>(c) Roger Molas (CC BY-SA 4.0)</copyright>
+    <lastBuildDate>Thu, 19 Mar 2020 17:21:30 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.rogermolas.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Access class Name using @objc attribute</title>
+      <link>http://blog.rogermolas.com/posts/objc_class_name/</link>
+      <pubDate>Thu, 19 Mar 2020 17:21:30 +0800</pubDate>
+      <author>contact@rogermolas.com (Roger Molas)</author>
+      <guid>http://blog.rogermolas.com/posts/objc_class_name/</guid>
+      <description>Scenario
+ Create Simple Table View app Load customs cells each row Cell identifier is class name, if object is TableCell cell identifier is &amp;ldquo;TableCell&amp;rdquo; Use common cell loading techniques Use helpher method to load cell using @objc attribute  Create UITableViewCell classes
+class HeaderCell: UITableViewCell { ... } class ContentsCell: UITableViewCell { ... } class AboutCell: UITableViewCell { ... } Load cell in Tableview in traditional way
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&amp;gt; UITableViewCell { if indexPath.</description>
+    </item>
+    
+  </channel>
+</rss>

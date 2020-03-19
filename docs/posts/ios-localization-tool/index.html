@@ -407,7 +407,7 @@ code, kbd, pre, samp {
     <div class="pure-u-11-12 pure-u-md-7-12">
         <div class="desktop pure-menu pure-menu-horizontal nav-menu">
             
-            <a href="http://blog.rogermolas.com/" class="site-title pure-menu-heading">Roger Molas</a>
+            <a href="http://blog.rogermolas.com/" class="site-title pure-menu-heading">Roger Molas - iOS Tricks and Findings</a>
             <ul class="pure-menu-list pull-right">
 				
                 <li class="pure-menu-item">
@@ -416,7 +416,7 @@ code, kbd, pre, samp {
             </ul>
         </div>
         <div class="mobile pure-menu nav-menu">
-            <a href="http://blog.rogermolas.com/" class="site-title pure-menu-heading" id="toggle-home">Roger Molas</a>
+            <a href="http://blog.rogermolas.com/" class="site-title pure-menu-heading" id="toggle-home">Roger Molas - iOS Tricks and Findings</a>
             <a href="#" id="toggle-btn">&#9776;</a>
             <ul class="pure-menu-list" id="toggle-content" style="display:none;">
                 
@@ -448,7 +448,7 @@ code, kbd, pre, samp {
         |
         
         
-        tags: [ <a href="http://blog.rogermolas.com/tags/ios">iOS</a> <a href="http://blog.rogermolas.com/tags/localization">localization</a> <a href="http://blog.rogermolas.com/tags/tools">tools</a> <a href="http://blog.rogermolas.com/tags/python">python</a> ]
+        tags: [ <a href="http://blog.rogermolas.com/tags/ios">iOS</a> <a href="http://blog.rogermolas.com/tags/localization">localization</a> <a href="http://blog.rogermolas.com/tags/tools">tools</a> <a href="http://blog.rogermolas.com/tags/python">python</a> <a href="http://blog.rogermolas.com/tags/swift">Swift</a> ]
         
 
         
@@ -483,11 +483,11 @@ ja.lproj  // directory
 <p>you can use the tool called <a href="https://github.com/rogermolas/csv-localizer"><strong>csv-localizer</strong></a> <a href="https://github.com/rogermolas/csv-localizer"><img src="https://img.shields.io/github/stars/badges/shields.svg?style=social&amp;label=Stars" alt="GitHub stars"></a> available on Github.</p>
 <p>Just instruct you translator or someone working on translations to put all translated strings into CSV file based on the format provided.</p>
 <p><strong>csv-localizer</strong> can be installed from homebrew via</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ brew tap rogermolas/csv-localizer
+<pre><code>$ brew tap rogermolas/csv-localizer
 $ brew install csv-localizer
-</code></pre></div><p>Convert using the following command</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ csv-localizer -p ios -i path/csv_files/ -o path/output
-</code></pre></div><blockquote>
+</code></pre><p>Convert using the following command</p>
+<pre><code>$ csv-localizer -p ios -i path/csv_files/ -o path/output
+</code></pre><blockquote>
 <p><em>Input directory, CSV files directory path, should not include the .csv file</em>
 *&ldquo;path/csv_files/*&rdquo; **and not** &ldquo;*~~path/csv_files/strings.csv~~*&rdquo;</p>
 </blockquote>

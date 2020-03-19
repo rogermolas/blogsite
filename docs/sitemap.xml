@@ -3,8 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.rogermolas.com/posts/objc_class_name/</loc>
+    <lastmod>2020-03-19T17:21:30+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.rogermolas.com/categories/</loc>
-    <lastmod>2018-07-22T13:39:13+08:00</lastmod>
+    <lastmod>2020-03-19T17:21:30+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.rogermolas.com/categories/objective-c/</loc>
+    <lastmod>2020-03-19T17:21:30+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.rogermolas.com/posts/</loc>
+    <lastmod>2020-03-19T17:21:30+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.rogermolas.com/</loc>
+    <lastmod>2020-03-19T17:21:30+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.rogermolas.com/categories/swift/</loc>
+    <lastmod>2020-03-19T17:21:30+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.rogermolas.com/categories/uitableview/</loc>
+    <lastmod>2020-03-19T17:21:30+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.rogermolas.com/categories/uitableviewcell/</loc>
+    <lastmod>2020-03-19T17:21:30+08:00</lastmod>
   </url>
   
   <url>
@@ -19,16 +54,6 @@
   
   <url>
     <loc>http://blog.rogermolas.com/categories/localization/</loc>
-    <lastmod>2018-07-22T13:39:13+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.rogermolas.com/posts/</loc>
-    <lastmod>2018-07-22T13:39:13+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.rogermolas.com/</loc>
     <lastmod>2018-07-22T13:39:13+08:00</lastmod>
   </url>
   

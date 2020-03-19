@@ -1,5 +1,5 @@
 baseurl = "http://blog.rogermolas.com/"
-title = "Roger Molas"
+title = "Roger Molas - iOS Tricks and Findings"
 theme = "temple"
 publishDir = "docs"
 copyright = "(c) Roger Molas (CC BY-SA 4.0)"
@@ -7,7 +7,7 @@ copyright = "(c) Roger Molas (CC BY-SA 4.0)"
 [params]
   # Enables syntax highlighting
   highlight = true 
-  hjslangs = ["swift","ruby", "python"]
+  hjslangs = ["swift","ruby", "python", "bash"]
   topmenu = "PROJECTS"
  
 # Builds a list page for each category given

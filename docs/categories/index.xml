@@ -1,17 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Roger Molas</title>
+    <title>Categories on Roger Molas - iOS Tricks and Findings</title>
     <link>http://blog.rogermolas.com/categories/</link>
-    <description>Recent content in Categories on Roger Molas</description>
+    <description>Recent content in Categories on Roger Molas - iOS Tricks and Findings</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
     <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
     <copyright>(c) Roger Molas (CC BY-SA 4.0)</copyright>
-    <lastBuildDate>Sun, 22 Jul 2018 13:39:13 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2020 17:21:30 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.rogermolas.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Objective C</title>
+      <link>http://blog.rogermolas.com/categories/objective-c/</link>
+      <pubDate>Thu, 19 Mar 2020 17:21:30 +0800</pubDate>
+      <author>contact@rogermolas.com (Roger Molas)</author>
+      <guid>http://blog.rogermolas.com/categories/objective-c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Swift</title>
+      <link>http://blog.rogermolas.com/categories/swift/</link>
+      <pubDate>Thu, 19 Mar 2020 17:21:30 +0800</pubDate>
+      <author>contact@rogermolas.com (Roger Molas)</author>
+      <guid>http://blog.rogermolas.com/categories/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UITableView</title>
+      <link>http://blog.rogermolas.com/categories/uitableview/</link>
+      <pubDate>Thu, 19 Mar 2020 17:21:30 +0800</pubDate>
+      <author>contact@rogermolas.com (Roger Molas)</author>
+      <guid>http://blog.rogermolas.com/categories/uitableview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UITableViewCell</title>
+      <link>http://blog.rogermolas.com/categories/uitableviewcell/</link>
+      <pubDate>Thu, 19 Mar 2020 17:21:30 +0800</pubDate>
+      <author>contact@rogermolas.com (Roger Molas)</author>
+      <guid>http://blog.rogermolas.com/categories/uitableviewcell/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>iOS</title>
