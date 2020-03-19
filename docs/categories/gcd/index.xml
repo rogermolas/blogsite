@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gcd on Roger Molas</title>
+    <title>GCD on Roger Molas</title>
     <link>http://blog.rogermolas.com/categories/gcd/</link>
-    <description>Recent content in Gcd on Roger Molas</description>
+    <description>Recent content in GCD on Roger Molas</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>contact@rogermolas.com (Roger Molas)</managingEditor>
     <webMaster>contact@rogermolas.com (Roger Molas)</webMaster>
@@ -19,7 +19,7 @@
       <pubDate>Fri, 09 Dec 2016 10:43:00 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
       <guid>http://blog.rogermolas.com/posts/grand-central-dispatch-and-swift-3/</guid>
-      <description>Grand Central Dispatch (GCD or libdispatch) a system level library for managing concurrent operations develop by Apple Inc., it is one of the more complicated and unfriendly APIs in iOS SDK. It was written in C programming language using this API felts like writing low-level C code that executed directly into hardware.
+      <description>**Grand Central Dispatch **(GCD or libdispatch) a system level library for managing concurrent operations develop by Apple Inc., it is one of the more complicated and unfriendly APIs in iOS SDK. It was written in C programming language using this API felts like writing low-level C code that executed directly into hardware.
 GCD or libdispatch is a combination of logic in the xnu kernel alongside the user-space library. The kernel has the most information available to balance workload across the entire system.</description>
     </item>
     

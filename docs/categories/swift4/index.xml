@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Swift4 on Roger Molas</title>
@@ -19,8 +19,8 @@
       <pubDate>Sat, 01 Jul 2017 14:07:14 +0000</pubDate>
       <author>contact@rogermolas.com (Roger Molas)</author>
       <guid>http://blog.rogermolas.com/posts/multiline-string-literals/</guid>
-      <description>Long strings are strings delimited by &amp;quot;&amp;quot;&amp;quot;triple quotes&amp;quot;&amp;quot;&amp;quot; that can contain newlines and individual &amp;ldquo; characters without the need to escape them. SE-0168 Multi-Line String Literals
-Multi-Line String Literal Creation let lines = &amp;quot;&amp;quot;&amp;quot; This is line one This is line two This is line three &amp;quot;&amp;quot;&amp;quot; print(&amp;quot;Multi-Line String: \(lines)&amp;quot;)  Mutation let myString = &amp;quot;&amp;quot;&amp;quot; Hello Multi line string! This is sample of mutating string. End here &amp;quot;&amp;quot;&amp;quot; let startingIndex = myString.</description>
+      <description>Long strings are strings delimited by &amp;quot;&amp;quot;&amp;quot;triple quotes&amp;quot;&amp;quot;&amp;quot; that can contain newlines and individual &amp;quot; characters without the need to escape them. SE-0168 Multi-Line String Literals
+Multi-Line String Literal Creation let lines = &amp;quot;&amp;quot;&amp;quot; This is line one This is line two This is line three &amp;quot;&amp;quot;&amp;quot; print(&amp;quot;Multi-Line String: \(lines)&amp;quot;) Mutation let myString = &amp;quot;&amp;quot;&amp;quot; Hello Multi line string! This is sample of mutating string. End here &amp;quot;&amp;quot;&amp;quot; let startingIndex = myString.</description>
     </item>
     
   </channel>
