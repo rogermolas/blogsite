@@ -137,7 +137,7 @@ enum Row: Int {
 ```
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let row = Row(rawValue: indexPath.row)
-    let cell = getCell(row.className, indexPath) // dynamic biding
+    let cell = getCell(row.className, indexPath) // dynamic binding
     return cell
 }
 ```
